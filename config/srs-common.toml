@@ -1,0 +1,119 @@
+
+#VS Ship Retrieval Service Configuration
+[srs]
+	#Language setting / Spracheinstellung
+	#Available languages:
+	#  de - Deutsch (German)
+	#  en - English
+	#  es - Español (Spanish)
+	#  fr - Français (French)
+	#  it - Italiano (Italian)
+	#  pt - Português (Portuguese)
+	#  ru - Русский (Russian)
+	#  zh - 中文 (Chinese)
+	#  ja - 日本語 (Japanese)
+	#  ko - 한국어 (Korean)
+	#Allowed Values: GERMAN, ENGLISH, SPANISH, FRENCH, ITALIAN, PORTUGUESE, RUSSIAN, CHINESE, JAPANESE, KOREAN
+	language = "ENGLISH"
+	#Permission level required to use the /ships command
+	#0 = All players can use the command
+	#2 = Only OPs can use the command (default)
+	#Valid range: 0-4
+	#Range: 0 ~ 4
+	commandPermissionLevel = 2
+	#Permission level required to use admin actions (teleport, freeze, delete)
+	#0 = All players can use admin actions
+	#2 = Only OPs can use admin actions (default)
+	#Valid range: 0-4
+	#Range: 0 ~ 4
+	adminActionsPermissionLevel = 2
+	#Enable or disable the Ship Namer item
+	#true = Ship Namer item is enabled and functional (default)
+	#false = Ship Namer item is disabled
+	shipNamerEnabled = true
+
+	#Teleport Warning System
+	[srs.tp_warning]
+		#Distance threshold for teleport warning (in blocks)
+		#Teleporting to ships beyond this distance will show a warning
+		#Default: 100000 (100k blocks)
+		#Range: 0.0 ~ 1000000.0
+		warningDistance = 100000.0
+		#Velocity threshold for teleport warning (in m/s)
+		#Teleporting to ships moving faster than this will show a warning
+		#Default: 500 m/s
+		#Range: 0.0 ~ 10000.0
+		warningVelocity = 500.0
+
+	#Ship Rendering System
+	[srs.ship_rendering]
+		#Enable or disable ship preview rendering in detail screen
+		#true = Show ship preview (default)
+		#false = Disable rendering (better performance)
+		enabled = true
+		#Maximum number of blocks to render in ship preview
+		#Only visible faces (top, front, right) are rendered for optimization
+		#⚠️ WARNING: Values above 10000 can cause significant lag!
+		#Lower values = better performance, less detail
+		#Default: 1000, Max: 50000
+		#Range: 100 ~ 50000
+		maxBlocksToRender = 1000
+		#Maximum number of cached ship previews
+		#Default: 50
+		#Range: 10 ~ 500
+		cacheSize = 50
+
+	[srs.hub_system]
+		#Maximum number of Hub Slave blocks per Controller
+		#Each Slave = 1 Docking Slot
+		#-1 = unlimited
+		#Default: 5
+		#Range: -1 ~ 100
+		maxSlaves = 5
+		#Cooldown in seconds between ship calls (per slot)
+		#Anti-spam protection
+		#Default: 300 (5 minutes)
+		#Range: 0 ~ 3600
+		callCooldownSeconds = 300
+		#Maximum distance (blocks) between Controller and Slaves
+		#-1 = unlimited
+		#Default: -1
+		#Range: -1 ~ 256
+		maxConnectionDistance = -1
+		#Allow redstone signal to trigger ship calls
+		#Default: true
+		redstoneEnabled = true
+		#Duration of teleport beam effect in milliseconds
+		#Default: 2000 (2 seconds)
+		#Range: 0 ~ 10000
+		beamDuration = 2000
+
+	#Teleport Animation Settings
+	[srs.teleport_animation]
+		#Duration of Phase 0: Start effects (particles + sound) in milliseconds
+		#Default: 1000 (1 second)
+		#Range: 0 ~ 10000
+		phase0Duration = 1000
+		#Duration of Phase 1: Fade-Out in milliseconds
+		#Default: 2000 (2 seconds)
+		#Range: 0 ~ 10000
+		phase1Duration = 2000
+		#Duration of Phase 3: Fade-In in milliseconds
+		#Default: 2000 (2 seconds)
+		#Range: 0 ~ 10000
+		phase3Duration = 2000
+		#Particle intensity multiplier
+		#1.0 = normal amount of particles (default)
+		#0.5 = 50% less particles (better performance)
+		#2.0 = 2x more particles (more spectacular)
+		#Range: 0.1 ~ 5.0
+		intensity = 1.0
+
+	#Auto-delete unnamed/unowned orphan ships
+	[srs.auto_delete]
+		#Enable automatic deletion of orphan ships (no name, no owner)
+		enabled = false
+		#How often to run cleanup (in minutes). Default: 30
+		#Range: 5 ~ 1440
+		intervalMinutes = 30
+
