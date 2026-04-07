@@ -31,9 +31,9 @@
 		#Range: 4.9E-324 ~ 1.7976931348623157E308
 		globalLimbDrawSpeedModifier = 0.001
 		#Range: 4.9E-324 ~ 1.7976931348623157E308
-		globalLimbVelocityModifier = -8.0E-4
+		globalLimbVelocityModifier = 4.9E-324
 		#Range: 4.9E-324 ~ 1.7976931348623157E308
-		globalLimbAccuracyModifier = -5.0E-4
+		globalLimbAccuracyModifier = 4.9E-324
 
 	#Configuration related to grip global modifiers
 	["Global Modifiers"."Grip Global Modifiers"]
