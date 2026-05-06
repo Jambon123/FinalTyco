@@ -1,7 +1,11 @@
 {
+<<<<<<< HEAD
 	chapter_groups: [
 		{ id: "693226878D58638A", title: "Climbing the Ranks" }
 		{ id: "288DA1F92F7C0A7A", title: "Guides + More" }
 		{ id: "1C1C4FB2AFCF489D", title: "Milestones" }
 	]
+=======
+	chapter_groups: [ ]
+>>>>>>> 7f8f0057ed1d1f13a505719ac683182102fd32a5
 }
