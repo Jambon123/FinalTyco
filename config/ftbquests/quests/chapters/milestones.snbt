@@ -31,16 +31,6 @@
 			y: -8.5d
 		}
 		{
-			id: "7D4A3A4CE19B8545"
-			tasks: [{
-				id: "400A0C15F54CD923"
-				item: "gtceu:ulv_machine_hull"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -10.0d
-		}
-		{
 			id: "3BB6140885395FDF"
 			secret: true
 			shape: "rsquare"
@@ -51,7 +41,7 @@
 			}]
 			title: "PLACEMENT"
 			x: -3.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -222,7 +212,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["7D4A3A4CE19B8545"]
 			id: "616C1D34A1CB7499"
 			tasks: [{
 				id: "5D73A8C26BAF553B"
@@ -768,6 +757,28 @@
 			}]
 			x: -12.0d
 			y: -8.0d
+		}
+		{
+			id: "07C74A6F51E02C13"
+			tasks: [{
+				id: "2C146A0F76717AC7"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -10.0d
+		}
+		{
+			id: "2BA8B6D9997B4EFC"
+			shape: "pentagon"
+			size: 4.0d
+			tasks: [{
+				id: "3225BCDD30051134"
+				title: "ALL OF THIS NEEDS REPLACING WITH LINKS, KILL ME!!!"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -6.0d
 		}
 	]
 	title: "GT-Milestones"

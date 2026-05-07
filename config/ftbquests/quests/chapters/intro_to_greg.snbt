@@ -6,6 +6,90 @@
 	id: "14ED5776ECE9A5D4"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["Find a tree and cut it down, simple."]
+			id: "516A537A03959257"
+			rewards: [{
+				id: "07F4E526B416D99F"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "265D3923D9738970"
+				item: { Count: 16, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			title: "Get Wood"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "05090722B81B0C17"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "7A5A366DABA5932D"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["516A537A03959257"]
+			id: "33EC029F53C3DFC1"
+			rewards: [{
+				count: 3
+				id: "06E6BF2A96199F1C"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05F9F3F5A7919E12"
+				item: {
+					Count: 1
+					id: "gtceu:flint_axe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 2.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["516A537A03959257"]
+			description: ["Find a rubber tree and collect it's saplings, you'll be needing a lot of the resin from this tree later"]
+			id: "5F1347E2B7E78051"
+			rewards: [{
+				count: 8
+				id: "578443DE88D5F3FD"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5842D882976B0A91"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+	]
 	title: "Steam"
 }
