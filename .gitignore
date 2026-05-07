@@ -18,3 +18,5 @@
 /modernfix/structureCacheV1
 /.vscode
 user-prefs.json
+config/embeddium-fingerprint.json
+config/worldedit/worldedit.properties
