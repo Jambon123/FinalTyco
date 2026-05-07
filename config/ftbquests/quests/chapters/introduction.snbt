@@ -21,14 +21,14 @@
 			icon: "genesis:moon_sand"
 			id: "724DA1801E132716"
 			shape: "octagon"
-			subtitle: "THE MOON!!!!"
+			subtitle: "THE MOON!!"
 			tasks: [{
 				dimension: "genesis:moon"
 				id: "11C1FC876749AEE6"
 				title: "Visit the Moon"
 				type: "dimension"
 			}]
-			title: "Moon"
+			title: "Noom"
 			x: -3.0d
 			y: 1.5d
 		}
@@ -74,14 +74,35 @@
 			y: -0.5d
 		}
 		{
+			description: [
+				"[ &lBEGIN MESSAGE&r ]"
+				"\"You have been asleep for X years, but you have finally made it. Welcome to &5Proxima Vis&r, Angel. "
+				""
+				"As a Sordenia Angel, your prime directive is to provide crucial mission support to the Pioneers of &5Proxima Vis&r. Together, you will establish infrastructure and begin colonization efforts with the end goal of securing a source of &denergium&r for our kingdom. From &2Terth&r, you will spread Sordenia's influence across this star system to &7Noom&r, &9Glugg&r, and &cCindel&r while furthering your mission. "
+				""
+				"Your first task while establishing initial sustainable infrastructure in this star system is to make contact with the Sordenia Pioneers, who arrived here X years before you and are looking forward to your assistance. "
+				""
+				"I have left you a guide to help you get your footing and navigate these new alien worlds. "
+				""
+				"Good luck.\""
+				"[ &lEND MESSAGE&r ]"
+			]
 			id: "449D2F50D069BF5F"
-			shape: "gear"
+			min_width: 4
+			rewards: [{
+				count: 2
+				id: "634DCBA192CEA48D"
+				item: "farmersdelight:apple_pie_slice"
+				type: "item"
+			}]
+			shape: "octagon"
 			size: 2.0d
 			tasks: [{
 				id: "090CF127844E1B2C"
 				title: "WELCOME!!!"
 				type: "checkmark"
 			}]
+			title: "Good Morning, Angel"
 			x: 0.0d
 			y: -9.0d
 		}
@@ -114,6 +135,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["13074B5BBC34B346"]
 			id: "4A302E8F98F1777A"
 			shape: "rsquare"
 			tasks: [{

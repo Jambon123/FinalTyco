@@ -5,7 +5,7 @@
 	group: "7B83B17B53A11582"
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 5
+	order_index: 4
 	quest_links: [{
 		id: "376725077649D2CC"
 		linked_quest: "5A8F0124E07D5025"
@@ -987,10 +987,7 @@
 			y: 2.165391156462583d
 		}
 		{
-			dependencies: [
-				"5B2696206205CB2E"
-				"70432F650591353C"
-			]
+			dependencies: ["5B2696206205CB2E"]
 			description: [
 				"Prepare &a128 Cupronickel&r, &a32 Bronze&r and &a16 Tin Alloy&r to craft the Heating Coils required for your first Electric Blast Furnace."
 				""

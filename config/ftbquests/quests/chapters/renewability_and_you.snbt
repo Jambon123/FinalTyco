@@ -5,7 +5,7 @@
 	group: "7B83B17B53A11582"
 	icon: "minecraft:water_bucket"
 	id: "4C3D68FB57D3CC02"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

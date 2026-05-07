@@ -5,7 +5,7 @@
 	group: "7B83B17B53A11582"
 	icon: "gtceu:mv_electric_motor"
 	id: "43E779CEEB25D55B"
-	order_index: 8
+	order_index: 7
 	quest_links: [{
 		id: "6FCAD016C795DE93"
 		linked_quest: "7567E885B7166603"
@@ -844,7 +844,6 @@
 			dependencies: [
 				"1646BF9194100E57"
 				"2AD44111B9B39C90"
-				"66805BB78A828C00"
 			]
 			description: [
 				"&3Kanthal Heating Coils&r are the next major step in progression. They increase the temperature of your &3Blast Furnace&r to &d2,700K&r, allowing you to process new materials. They may also &eaccelerate&r less hot recipes - check the quest to the top-left for details."
