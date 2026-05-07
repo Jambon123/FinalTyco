@@ -31,7 +31,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 //NOTE: 2: Noom
+    event.create("noom")
+        .dust()
+        .components('1x anulium', )
+        .iconSet(global.pvHelpers.getIcon("SAND"))
+        .color(0xc4c5cb).secondaryColor(0xb0b0b5)
+        .flags(global.pvHelpers.resolveFlags(
+            "block"))
+    event.create("light_noom")
+        .dust()
+        .components('1x anulium', )
+        .iconSet(global.pvHelpers.getIcon("SAND"))
+        .color(0xdcdcdf).secondaryColor(0xceced2)
+        .flags(global.pvHelpers.resolveFlags(
+            "block"))
 
+    event.create("dark_noom")
+        .dust()
+        .components('1x anulium', )
+        .iconSet(global.pvHelpers.getIcon("SAND"))
+        .color(0x9b9b9f).secondaryColor(0x69696c)
+        .flags(global.pvHelpers.resolveFlags(
+            "block"))
 
 //NOTE: 3: Glugg
 
