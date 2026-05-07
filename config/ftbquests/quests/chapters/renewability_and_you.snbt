@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "renewability_and_you"
-	group: "288DA1F92F7C0A7A"
+	group: "7B83B17B53A11582"
 	icon: "minecraft:water_bucket"
 	id: "4C3D68FB57D3CC02"
-	order_index: 1
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{

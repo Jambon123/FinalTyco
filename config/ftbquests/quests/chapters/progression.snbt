@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "progression"
-	group: "1C1C4FB2AFCF489D"
+	group: "7B83B17B53A11582"
 	icon: "gtceu:basic_electronic_circuit"
 	id: "28EBC0FF82EFD94B"
-	order_index: 0
+	order_index: 1
 	quest_links: [
 		{
 			id: "2BB2FC2D9D2F2E57"

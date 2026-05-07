@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev"
+	group: "01C3A619010E40A6"
+	id: "0FB8199FCD83AA07"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "EV"
+}

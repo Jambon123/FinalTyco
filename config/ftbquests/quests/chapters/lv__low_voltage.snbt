@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "lv__low_voltage"
-	group: "693226878D58638A"
+	group: "7B83B17B53A11582"
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 1
+	order_index: 5
 	quest_links: [{
 		id: "376725077649D2CC"
 		linked_quest: "5A8F0124E07D5025"

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "periodic_table"
+	group: ""
+	icon: "sgjourney:archeology_table"
+	id: "21ED2B222A34C52D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Periodic Table"
+}

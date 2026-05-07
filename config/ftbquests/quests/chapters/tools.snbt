@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tools"
+	group: "5C078D63542522C2"
+	id: "6D829AA4A43722EA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Tools"
+}

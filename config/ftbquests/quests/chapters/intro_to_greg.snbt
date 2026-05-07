@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro_to_greg"
+	group: "01C3A619010E40A6"
+	id: "14ED5776ECE9A5D4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Steam"
+}

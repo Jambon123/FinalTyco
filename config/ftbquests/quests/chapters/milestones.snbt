@@ -1,0 +1,224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "milestones"
+	group: "01C3A619010E40A6"
+	icon: "gtceu:gregification_hazard_sign_block"
+	id: "711402F04F656FB3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7BB9621292178CEF"
+			tasks: [{
+				id: "6756BD9104E948F4"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7BB9621292178CEF"]
+			id: "54D47CC01AC991EC"
+			tasks: [{
+				id: "12A6804C7C67E9DE"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -8.5d
+		}
+		{
+			id: "7D4A3A4CE19B8545"
+			tasks: [{
+				id: "400A0C15F54CD923"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -10.0d
+		}
+		{
+			id: "3BB6140885395FDF"
+			shape: "rsquare"
+			tasks: [{
+				id: "0303965EFC747A4B"
+				item: "supplementaries:checker_block"
+				type: "item"
+			}]
+			title: "PLACEMENT"
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"55F59FE20D4052F8"
+				"54D47CC01AC991EC"
+			]
+			id: "38A642C295F78B74"
+			tasks: [{
+				id: "1123F3BECEA77360"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -7.0d
+		}
+		{
+			id: "55F59FE20D4052F8"
+			tasks: [{
+				id: "00287D1549094227"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"2BF11E5CC50AD869"
+				"38A642C295F78B74"
+			]
+			id: "0A617DA36D134351"
+			tasks: [{
+				id: "7C035F36C52F010C"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7A42D22AE6228CF3"
+				"0A617DA36D134351"
+			]
+			id: "2C01919DBD2765EF"
+			tasks: [{
+				id: "3BFED71EAF6F4E18"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -4.0d
+		}
+		{
+			id: "2BF11E5CC50AD869"
+			tasks: [{
+				id: "7B9A3F04D5FC38BE"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -5.5d
+		}
+		{
+			id: "7A42D22AE6228CF3"
+			tasks: [{
+				id: "49236005BAFCFC6C"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2C01919DBD2765EF"
+				"4020C4037E0898B8"
+			]
+			id: "729EF01BA7E975FF"
+			tasks: [{
+				id: "262A11C3583A91C1"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -2.5d
+		}
+		{
+			id: "4020C4037E0898B8"
+			tasks: [{
+				id: "2A7FA4014CF7B2E0"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"729EF01BA7E975FF"
+				"68BB0353F5E51651"
+			]
+			id: "422B6C93CF5A963D"
+			tasks: [{
+				id: "203A3B8E32039932"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			id: "68BB0353F5E51651"
+			tasks: [{
+				id: "1E11750652CECD7A"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"422B6C93CF5A963D"
+				"3B5A39528F638F00"
+			]
+			id: "5ADE042879321B29"
+			tasks: [{
+				id: "38C8B540A4C56B21"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			id: "3B5A39528F638F00"
+			tasks: [{
+				id: "681EBD8F9893DA7F"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5ADE042879321B29"
+				"6D48FC3ECD659CDE"
+			]
+			id: "0FE13F6705B5560E"
+			tasks: [{
+				id: "17516840BF4E0A97"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.0d
+		}
+		{
+			id: "6D48FC3ECD659CDE"
+			tasks: [{
+				id: "58927233541795C3"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 2.0d
+		}
+	]
+	title: "GT-Milestones"
+}

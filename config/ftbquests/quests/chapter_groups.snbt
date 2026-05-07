@@ -1,11 +1,9 @@
 {
-<<<<<<< HEAD
 	chapter_groups: [
-		{ id: "693226878D58638A", title: "Climbing the Ranks" }
-		{ id: "288DA1F92F7C0A7A", title: "Guides + More" }
-		{ id: "1C1C4FB2AFCF489D", title: "Milestones" }
+		{ id: "01C3A619010E40A6", title: "Greg" }
+		{ id: "6A738CD83FF82A8C", title: "Transit" }
+		{ id: "73907277A774CA9A", title: "Storage (JAMBON)" }
+		{ id: "5C078D63542522C2", title: "Misc" }
+		{ id: "7B83B17B53A11582", title: "GTCPM" }
 	]
-=======
-	chapter_groups: [ ]
->>>>>>> 7f8f0057ed1d1f13a505719ac683182102fd32a5
 }

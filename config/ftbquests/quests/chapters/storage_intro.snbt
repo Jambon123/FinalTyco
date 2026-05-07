@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_intro"
+	group: "73907277A774CA9A"
+	icon: "sophisticatedbackpacks:backpack"
+	id: "6B6885190B9BF2C4"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Backpacks + EnderChests"
+}

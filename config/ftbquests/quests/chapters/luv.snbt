@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "luv"
+	group: "01C3A619010E40A6"
+	id: "0639DB15004510CE"
+	order_index: 7
+	quest_links: [ ]
+	quests: [ ]
+	title: "LuV"
+}

@@ -1,0 +1,186 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "introduction"
+	group: ""
+	icon: "minecraft:cake"
+	id: "5DB6C019BD58FA19"
+	images: [{
+		height: 4.0d
+		image: "chipped:block/carved_pumpkin/tiny_smug_carved_pumpkin"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.0d
+		y: -0.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["651861AC4147862D"]
+			icon: "genesis:moon_sand"
+			id: "724DA1801E132716"
+			shape: "octagon"
+			subtitle: "THE MOON!!!!"
+			tasks: [{
+				dimension: "genesis:moon"
+				id: "11C1FC876749AEE6"
+				title: "Visit the Moon"
+				type: "dimension"
+			}]
+			title: "Moon"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2FDC2C22697413DC"]
+			id: "6923967FC825FE6E"
+			shape: "octagon"
+			tasks: [{
+				dimension: "genesis:moon"
+				id: "5B42917177332418"
+				type: "dimension"
+			}]
+			title: "Cindel"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50697FA81F571EE5"]
+			id: "2FDC2C22697413DC"
+			shape: "octagon"
+			tasks: [{
+				dimension: "genesis:moon"
+				id: "3192A5881CC4D881"
+				type: "dimension"
+			}]
+			title: "Glugg"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25118DD8F241F7D2"]
+			icon: "gtceu:solar_panel"
+			id: "651861AC4147862D"
+			shape: "octagon"
+			subtitle: "Free Space"
+			tasks: [{
+				dimension: "genesis:moon"
+				id: "4DBFB287E74DC352"
+				type: "dimension"
+			}]
+			title: "Orbit"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			id: "449D2F50D069BF5F"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "090CF127844E1B2C"
+				title: "WELCOME!!!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["449D2F50D069BF5F"]
+			id: "13074B5BBC34B346"
+			shape: "rsquare"
+			tasks: [{
+				id: "3A91E5D1DB95C86B"
+				title: "Information"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4A302E8F98F1777A"]
+			id: "16A9271BDBA7E903"
+			shape: "octagon"
+			subtitle: "Not Earth?"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:grass_block"
+				id: "5214FFA9E32C0511"
+				title: "Home"
+				type: "dimension"
+			}]
+			title: "Terth"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			id: "4A302E8F98F1777A"
+			shape: "rsquare"
+			tasks: [{
+				id: "1EBCC76D558BF1DA"
+				title: "Planets"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6923967FC825FE6E"]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:ender_residue"
+			id: "65D297AE11567835"
+			invisible: true
+			shape: "octagon"
+			tasks: [{
+				id: "2A3E4EBD0F198DF3"
+				item: "natures_spirit:wisteria_fence_gate"
+				type: "item"
+			}]
+			title: "Enger"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["65D297AE11567835"]
+			hide_until_deps_complete: true
+			icon: "alexscaves:sack_of_sating"
+			id: "1D45E577290BAA33"
+			shape: "heart"
+			size: 2.0d
+			tasks: [{
+				id: "13C0CA6114E42080"
+				title: "THANK YOU!!!"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["724DA1801E132716"]
+			id: "50697FA81F571EE5"
+			shape: "octagon"
+			tasks: [{
+				dimension: "genesis:subspace"
+				id: "635DCF53029C660E"
+				type: "dimension"
+			}]
+			title: "Subspace"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16A9271BDBA7E903"]
+			id: "25118DD8F241F7D2"
+			shape: "octagon"
+			tasks: [{
+				dimension: "genesis:great_unknown"
+				id: "644899C52E3CB57F"
+				type: "dimension"
+			}]
+			title: "Great Unknown"
+			x: -3.0d
+			y: -2.5d
+		}
+	]
+	title: "Introduction"
+}
