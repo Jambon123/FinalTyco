@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(global.pvHelpers.getIcon("SAND"))
         .color(0xdcdcdf).secondaryColor(0xceced2)
         .flags(global.pvHelpers.resolveFlags(
-            "block"))
+            "block","no_decomp"))
 
     event.create("dark_noom")
         .dust()
@@ -52,7 +52,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(global.pvHelpers.getIcon("SAND"))
         .color(0x9b9b9f).secondaryColor(0x69696c)
         .flags(global.pvHelpers.resolveFlags(
-            "block"))
+            "block","no_decomp"))
 
 //NOTE: 3: Glugg
 

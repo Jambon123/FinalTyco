@@ -17,4 +17,18 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
+    event.recipes.gtceu.electrolyzer("decomposition_dark_moon_dust_to_gtregs")
+        .itemInputs("9x gtceu:dark_noom_dust")
+        .itemOutputs("4x gtceu:stone_dust", "2x gtceu:chromium_dust", "1x gtceu:iron_dust", "1x gtceu:aluminium_dust", "1x gtceu:uranium_dust")
+        .duration(10 * 20)
+        .circuit(0)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.electrolyzer("decomposition_dark_moon_dust_to_gt_and_crowns")
+        .itemInputs("9x gtceu:dark_noom_dust")
+        .itemOutputs("4x gtceu:stone_dust", "2x gtceu:chromium_dust", "1x gtceu:iron_dust", "1x gtceu:aluminium_dust", "1x crowns:natural_uranium_nugget")
+        .duration(10 * 20)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.LV])
+
 })
