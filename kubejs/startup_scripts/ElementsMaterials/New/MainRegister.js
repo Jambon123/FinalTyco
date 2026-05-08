@@ -33,11 +33,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 //NOTE: 2: Noom
     event.create("noom")
         .dust()
-        .components('1x anulium', )
+        .components('2x dark_noom', "1x light_noom")
         .iconSet(global.pvHelpers.getIcon("SAND"))
         .color(0xc4c5cb).secondaryColor(0xb0b0b5)
         .flags(global.pvHelpers.resolveFlags(
-            "block"))
+            "block", "no_decomp"))
     event.create("light_noom")
         .dust()
         .components('1x anulium', )
@@ -48,7 +48,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create("dark_noom")
         .dust()
-        .components('1x anulium', )
+        .components("2x chromium")
         .iconSet(global.pvHelpers.getIcon("SAND"))
         .color(0x9b9b9f).secondaryColor(0x69696c)
         .flags(global.pvHelpers.resolveFlags(

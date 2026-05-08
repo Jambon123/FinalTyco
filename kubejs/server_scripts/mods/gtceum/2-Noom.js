@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    event.remove({id: "gtceu:macerator/macerate_noom_block"})
+    
     event.recipes.gtceu.forge_hammer("hammer_moon_stone_to_sand")
         .itemInputs("1x genesis:moon_stone")
         .itemOutputs("2x genesis:moon_sand")
