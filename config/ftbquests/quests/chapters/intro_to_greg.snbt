@@ -3,22 +3,32 @@
 	default_quest_shape: ""
 	filename: "intro_to_greg"
 	group: "01C3A619010E40A6"
+	icon: "gtceu:bronze_ingot"
 	id: "14ED5776ECE9A5D4"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Find a tree and cut it down, simple."]
+			description: ["Find a tree any tree."]
+			icon: "minecraft:oak_log"
 			id: "516A537A03959257"
 			rewards: [{
-				id: "07F4E526B416D99F"
-				item: "minecraft:stripped_oak_log"
+				count: 8
+				id: "21860BB214186257"
+				item: "minecraft:apple"
 				type: "item"
 			}]
 			tasks: [{
-				count: 16L
-				id: "265D3923D9738970"
-				item: { Count: 16, id: "minecraft:oak_log" }
+				count: 12L
+				id: "4945A1FE43E1330F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "12 x Logs (Any)"
 				type: "item"
 			}]
 			title: "Get Wood"
@@ -26,16 +36,23 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["757E17862DBB5BC0"]
 			id: "05090722B81B0C17"
+			rewards: [{
+				count: 32
+				id: "542894078153BC06"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			shape: "gear"
-			size: 2.0d
+			size: 1.25d
 			tasks: [{
 				id: "7A5A366DABA5932D"
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -2.9936577908694844d
+			y: 3.0422645067637433d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -70,7 +87,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -88,7 +105,449 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"034C664B9B7CDD97"
+				"17401511C8E6A160"
+				"36C9E125DFDA7108"
+			]
+			id: "78CD10B1A8950403"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "08FC3999A2F31888"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: 2.9858736936601815d
+			y: 3.231320646956924d
+		}
+		{
+			dependencies: ["516A537A03959257"]
+			id: "48504580092925EC"
+			tasks: [{
+				id: "4BD10C9F7BE38D42"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Find Iron"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"46BBF90E490DDDCC"
+				"5DD9D595321F7E3F"
+			]
+			id: "33E095F38FAE4256"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0557E2E30CEAEC2D"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["516A537A03959257"]
+			id: "46BBF90E490DDDCC"
+			tasks: [{
+				id: "0EBA290E2A0C4E37"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -0.34597699784795566d
+			y: 3.8288756462928646d
+		}
+		{
+			dependencies: ["516A537A03959257"]
+			id: "5DD9D595321F7E3F"
+			tasks: [{
+				id: "3E8C44CF9E6CB2B9"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			x: 0.36830871643776675d
+			y: 3.8288756462928646d
+		}
+		{
+			dependencies: ["5ED279C96D8FB4CC"]
+			icon: "gtceu:steel_ingot"
+			id: "01BCAE9584B6FF4A"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "5862F70FF95BB075"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/steel)"
+					}
+				}
+				title: "Steel Ingot (Any)"
+				type: "item"
+			}]
+			title: "Steel"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["05090722B81B0C17"]
+			id: "49A58A721A740131"
+			tasks: [{
+				id: "212B016D2BD38092"
+				item: "tfmg:creosote_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["48504580092925EC"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "757E17862DBB5BC0"
+			tasks: [
+				{
+					id: "7322DDEB2A92706C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wrenches)"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_wrenches"
+					type: "item"
+				}
+				{
+					id: "7C3D7C4C405011E6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_screwdrivers)"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_screwdrivers"
+					type: "item"
+				}
+				{
+					id: "689BA2526BABEA68"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_files)"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_files"
+					type: "item"
+				}
+				{
+					id: "0A6FBF9B40075354"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_hammers)"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_hammers"
+					type: "item"
+				}
+			]
+			title: "Essential Tools"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["757E17862DBB5BC0"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wire_cutter"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "0B0C23BC21F600F3"
+			tasks: [
+				{
+					id: "774C309658EF1869"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_saws)"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_saws"
+					type: "item"
+				}
+				{
+					id: "0C93AFDAE86DBAD0"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:tools/crafting_wire_cutters)"
+						}
+					}
+					title: "Any #gtceu:tools/crafting_wire_cutters"
+					type: "item"
+				}
+			]
+			title: "Optional Tools"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["33E095F38FAE4256"]
+			id: "4095A5D8CB45C5DB"
+			tasks: [{
+				id: "0C7E4CA5DC26C00B"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4095A5D8CB45C5DB"]
+			id: "31D19368E7DB975E"
+			tasks: [{
+				id: "6BB01053993E8E9B"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4095A5D8CB45C5DB"]
+			id: "698E3955AE934012"
+			tasks: [{
+				id: "08173BD8AC31E621"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["698E3955AE934012"]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "5ED279C96D8FB4CC"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6938C81CFBC797FD"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2BD3A0A6D9F045E8"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4095A5D8CB45C5DB"]
+			id: "03C01C150C5D643F"
+			tasks: [{
+				id: "3A2763A709B78CAE"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03C01C150C5D643F"]
+			icon: "gtceu:red_alloy_ingot"
+			id: "799A13880B2CB7C5"
+			tasks: [{
+				id: "3E7A5432AA70F150"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/red_alloy)"
+					}
+				}
+				title: "Any #forge:ingots/red_alloy"
+				type: "item"
+			}]
+			title: "Red Alloy"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4095A5D8CB45C5DB"]
+			id: "282D0E85305D145E"
+			tasks: [{
+				id: "5C972417D0E39125"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48504580092925EC"]
+			description: ["Produce &9Wrought Iron&r by smelting iron nuggets in a furnace."]
+			id: "36C9E125DFDA7108"
+			tasks: [{
+				id: "1DCB054A175B1307"
+				item: "gtceu:wrought_iron_ingot"
+				title: "Wrought Iron"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"799A13880B2CB7C5"
+				"299026F0EA5596FF"
+			]
+			id: "034C664B9B7CDD97"
+			tasks: [{
+				id: "74625178AE288119"
+				item: "gtceu:red_alloy_single_cable"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["219D33A2215C17FF"]
+			description: ["Rubber Ingots in an alloy smelter with a casting mold."]
+			id: "299026F0EA5596FF"
+			tasks: [{
+				id: "29F3FA566B52437F"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["36C9E125DFDA7108"]
+			id: "17401511C8E6A160"
+			tasks: [{
+				id: "66DBD872EEA1CF92"
+				item: "gtceu:ulv_machine_casing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4095A5D8CB45C5DB"]
+			id: "18BAA54541E2784A"
+			tasks: [{
+				id: "1CB82DD864101AAF"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			description: ["Go to the &4Nether&r to find &eSulfur Ore&r."]
+			id: "41EBAA80DA42249E"
+			tasks: [{
+				id: "7F94A9A0EABA816D"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["18BAA54541E2784A"]
+			id: "04DB024CE4263452"
+			tasks: [{
+				id: "774FE01672B616AF"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"03C01C150C5D643F"
+				"04DB024CE4263452"
+				"41EBAA80DA42249E"
+			]
+			id: "219D33A2215C17FF"
+			tasks: [{
+				id: "72BD524442740704"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"33E095F38FAE4256"
+				"4095A5D8CB45C5DB"
+			]
+			id: "07066C0E7BB681B2"
+			tasks: [{
+				id: "19537656B4AE3EC1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_small_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe))"
+					}
+				}
+				only_from_crafting: false
+				title: "Bronze Fluid Pipe (Any)"
+				type: "item"
+			}]
+			title: "Fluid Pipes"
+			x: -1.5029802021920773d
+			y: 1.143670634859717d
 		}
 	]
 	title: "Steam"

@@ -1,13 +1,34 @@
 {
-	autofocus_id: "3BB6140885395FDF"
+	autofocus_id: "61599BF4DFE6ABDC"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "milestones"
 	group: "01C3A619010E40A6"
 	icon: "gtceu:gregification_hazard_sign_block"
 	id: "711402F04F656FB3"
+	images: [{
+		height: 1.0d
+		image: "ftbquests:block/barrier_open"
+		rotation: 0.0d
+		width: 1.0d
+		x: -6.0d
+		y: -4.0d
+	}]
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "02B5338085451830"
+			linked_quest: "78CD10B1A8950403"
+			x: -12.0d
+			y: -10.0d
+		}
+		{
+			id: "4B2401488AD99A10"
+			linked_quest: "36C9E125DFDA7108"
+			x: -12.0d
+			y: -11.5d
+		}
+	]
 	quests: [
 		{
 			id: "7BB9621292178CEF"
@@ -16,8 +37,8 @@
 				item: "gtceu:cupronickel_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -8.5d
+			x: 9.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7BB9621292178CEF"]
@@ -27,21 +48,8 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -8.5d
-		}
-		{
-			id: "3BB6140885395FDF"
-			secret: true
-			shape: "rsquare"
-			tasks: [{
-				id: "0303965EFC747A4B"
-				item: "supplementaries:checker_block"
-				type: "item"
-			}]
-			title: "PLACEMENT"
-			x: -3.0d
-			y: -3.5d
+			x: 8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -54,8 +62,8 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -7.0d
+			x: 8.0d
+			y: -5.5d
 		}
 		{
 			id: "55F59FE20D4052F8"
@@ -64,8 +72,8 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -7.0d
+			x: 9.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -78,8 +86,8 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -5.5d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -92,8 +100,8 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -4.0d
+			x: 8.0d
+			y: -2.5d
 		}
 		{
 			id: "2BF11E5CC50AD869"
@@ -102,8 +110,8 @@
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -5.5d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
 			id: "7A42D22AE6228CF3"
@@ -112,8 +120,8 @@
 				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -4.0d
+			x: 9.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -126,8 +134,8 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -2.5d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			id: "4020C4037E0898B8"
@@ -136,8 +144,8 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -2.5d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -150,8 +158,8 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -1.0d
+			x: 8.0d
+			y: 0.5d
 		}
 		{
 			id: "68BB0353F5E51651"
@@ -160,8 +168,8 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -1.0d
+			x: 9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -174,8 +182,8 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 0.5d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			id: "3B5A39528F638F00"
@@ -184,8 +192,8 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 0.5d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -198,8 +206,8 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 2.0d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			id: "6D48FC3ECD659CDE"
@@ -208,8 +216,8 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 2.0d
+			x: 9.5d
+			y: 3.5d
 		}
 		{
 			id: "616C1D34A1CB7499"
@@ -317,7 +325,7 @@
 				type: "item"
 			}]
 			x: -12.0d
-			y: -7.0d
+			y: -8.5d
 		}
 		{
 			id: "4287AD64ED9E5F13"
@@ -327,7 +335,7 @@
 				type: "item"
 			}]
 			x: -12.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["067ED7F54A91B618"]
@@ -338,18 +346,19 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -7.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["0D82E7D5862B8725"]
 			id: "60A2BD0D1A90B03C"
+			shape: "hexagon"
 			tasks: [{
 				id: "2B1718F1E93D1B6D"
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -7.0d
+			x: -8.338394389649991d
+			y: -7.6500017628272445d
 		}
 		{
 			id: "1D2F12585BC49FD5"
@@ -359,18 +368,19 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1D2F12585BC49FD5"]
 			id: "016BBD2744D4813B"
+			shape: "hexagon"
 			tasks: [{
 				id: "05B8BE513F94B6D5"
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
 			x: -8.0d
-			y: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["016BBD2744D4813B"]
@@ -381,7 +391,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4287AD64ED9E5F13"]
@@ -392,7 +402,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["324747CA3DC1B4A8"]
@@ -403,7 +413,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6350F79192CA5CDE"]
@@ -414,7 +424,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["34E6C92EDD279471"]
@@ -425,7 +435,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["59B6C4D48DCC02FA"]
@@ -611,14 +621,15 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6E80A606C14C1E01"]
 			id: "3098E6B19C6B3636"
 			tasks: [{
 				id: "06E37A4C8066758A"
 				item: "gtceu:manganese_phosphide_single_wire"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 4.0d
+			x: -14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3098E6B19C6B3636"]
@@ -628,8 +639,8 @@
 				item: "gtceu:magnesium_diboride_single_wire"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 4.0d
+			x: -14.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1393B04B88B851BB"]
@@ -639,8 +650,8 @@
 				item: "gtceu:mercury_barium_calcium_cuprate_single_wire"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.0d
+			x: -14.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5ADFBEEE0F715363"]
@@ -650,8 +661,8 @@
 				item: "gtceu:uranium_triplatinum_single_wire"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.0d
+			x: -14.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3E0DC06B5C2E07C2"]
@@ -661,8 +672,8 @@
 				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.0d
+			x: -14.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6E973090A8932DC5"]
@@ -672,8 +683,8 @@
 				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -14.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3DC80D3FF17DB42B"]
@@ -683,8 +694,8 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: -14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6C2760979362DA16"]
@@ -694,19 +705,8 @@
 				item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["20F2199B09CD3DF3"]
-			id: "7AD7904628F8E01C"
-			tasks: [{
-				id: "63246D916F323A2E"
-				item: "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 4.0d
+			x: -14.0d
+			y: 3.5d
 		}
 		{
 			id: "4B91CC45DBC19086"
@@ -715,8 +715,8 @@
 				title: "Superconductors"
 				type: "checkmark"
 			}]
-			x: -11.0d
-			y: 4.0d
+			x: -13.626380724305001d
+			y: -9.152151927555906d
 		}
 		{
 			id: "2662FAA9E4B3EB43"
@@ -725,8 +725,8 @@
 				title: "Coils"
 				type: "checkmark"
 			}]
-			x: -14.0d
-			y: -9.5d
+			x: 8.389032450921249d
+			y: -7.637865741081029d
 		}
 		{
 			id: "2CCB720BF0358168"
@@ -735,8 +735,8 @@
 				title: "Coil Ingots"
 				type: "checkmark"
 			}]
-			x: -15.5d
-			y: -9.5d
+			x: 9.872862682160658d
+			y: -7.661798486746186d
 		}
 		{
 			id: "5C74931E5D390136"
@@ -745,28 +745,8 @@
 				title: "Machine Hulls"
 				type: "checkmark"
 			}]
-			x: -13.0d
-			y: -10.0d
-		}
-		{
-			id: "41FF626396B2079B"
-			tasks: [{
-				id: "1833922A37B84D61"
-				title: "Circuits per Tier"
-				type: "checkmark"
-			}]
-			x: -12.0d
-			y: -8.0d
-		}
-		{
-			id: "07C74A6F51E02C13"
-			tasks: [{
-				id: "2C146A0F76717AC7"
-				item: "gtceu:ulv_machine_hull"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -10.0d
+			x: -12.729446497759291d
+			y: -10.003515412985077d
 		}
 		{
 			id: "2BA8B6D9997B4EFC"
@@ -777,8 +757,41 @@
 				title: "ALL OF THIS NEEDS REPLACING WITH LINKS, KILL ME!!!"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: -6.0d
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			id: "6E80A606C14C1E01"
+			tasks: [{
+				id: "45189917DF1FE662"
+				item: "gtceu:red_alloy_single_wire"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -8.5d
+		}
+		{
+			icon: "supplementaries:checker_block"
+			id: "61599BF4DFE6ABDC"
+			secret: true
+			shape: "rsquare"
+			tasks: [{
+				id: "5253DB5A45D3DD58"
+				title: "PLACEMENT"
+				type: "checkmark"
+			}]
+			x: -3.8541723011867433d
+			y: -3.6957440910280965d
+		}
+		{
+			id: "18634DC62EDA29FB"
+			tasks: [{
+				id: "172AF2AB385F8633"
+				title: "CHUD FUCKING TIER"
+				type: "checkmark"
+			}]
+			x: -15.0d
+			y: -4.0d
 		}
 	]
 	title: "GT-Milestones"

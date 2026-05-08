@@ -95,7 +95,7 @@
 				item: "farmersdelight:apple_pie_slice"
 				type: "item"
 			}]
-			shape: "octagon"
+			shape: "heart"
 			size: 2.0d
 			tasks: [{
 				id: "090CF127844E1B2C"
@@ -107,7 +107,6 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["449D2F50D069BF5F"]
 			id: "13074B5BBC34B346"
 			shape: "rsquare"
 			tasks: [{
