@@ -86,7 +86,7 @@ global.pvHelpers.getIcon = function(iconSet) {
     return ICON_MAP[key];
 }
 
-global.pvHelpers.ticksToSeconds = function(ticks) {
+global.pvHelpers.secondsToTicks = function(ticks) {
     return ticks * 20
 }
 

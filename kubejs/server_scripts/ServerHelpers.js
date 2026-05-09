@@ -70,6 +70,16 @@ var VOLTAGE_MAP = {
     "maxha": GTValues.VHA[GTValues.MAX],
 }
 
+function assureArray(assurance) {
+    if (assurance === undefined || assurance === null) {
+        return [];
+    }
+    if (Array.isArray(assurance)) {
+        return assurance;
+    }
+    return [assurance]
+}
+
 global.pvHelpers.constVoltages = function(getVoltage) {
     if (typeof getVoltage === 'undefined') {
         voltage = GTValues.VA[GTValues.LV]
@@ -84,29 +94,27 @@ global.pvHelpers.constVoltages = function(getVoltage) {
 };
 
 global.pvHelpers.easyGTRecipe = function(event) {
-    return function(recipetype, recipename, durationseconds, voltage, inputfluid, inputitem, outputfluid, outputitem, circuit) {
+    return function(recipetype, recipename, durationseconds, voltage, circuit, inputitem, inputfluid, outputitem, outputfluid) {
+        if (typeof recipetype === 'undefined' || recipetype === null) recipetype = "fermenter";
+        if (typeof recipename === 'undefined' || recipename === null) recipename = recipename = `${recipetype}_broken_recipe_${Date.now()}`;
+        if (typeof durationseconds === 'undefined' || durationseconds === null) durationseconds = 10;
 
-        function assureArray(assurance) {
-            if (value === undefined || value === null) {
-                return [];
-            }
-            if (Array.isArray(value)) {
-                return value;
-            }
-        return [value]
-        }
+        var recipeTypeKey = String(recipetype).trim().toLowerCase().replace(/\s+/g, '_').replace(/-/g, '_');
+        var recipeBuilder = event.recipes.gtceu[recipeTypeKey](recipename);
+        var normalisedInputItems = assureArray(inputitem)
+        var normalisedInputFluids = assureArray(inputfluid)
+        var normalisedOutputItems = assureArray(outputitem)
+        var normalisedOutputFluids = assureArray(outputfluid)
 
+        recipeBuilder.duration(global.pvHelpers.secondsToTicks(durationseconds))
+        if(voltage) {recipeBuilder.EUt(global.pvHelpers.constVoltages(voltage))}
+        if(circuit) {recipeBuilder.circuit(circuit)}
+        if (normalisedInputItems.length > 0) {recipeBuilder.itemInputs.apply(recipeBuilder, normalisedInputItems);}
+        if (normalisedInputFluids.length > 0) {recipeBuilder.inputFluids.apply(recipeBuilder, normalisedInputFluids);}
+        if (normalisedOutputItems.length > 0) {recipeBuilder.itemOutputs.apply(recipeBuilder, normalisedOutputItems);}
+        if (normalisedOutputFluids.length > 0) {recipeBuilder.outputFluids.apply(recipeBuilder, normalisedOutputFluids);}
 
-        console.info(`[pv] Registering material ${name} with element ${element}.`)
+        console.info(`[pv] Registering recipe ${recipename} for ${recipetype} at ${voltage} taking ${durationseconds} seconds.`)
 
-        return event.recipes.gtceu.centrifuge(recipename) 
-            var recipeTypeKey = String(recipeType).trim().toLowerCase().replace(/\s+/g, '_').replace(/-/g, '_');
-            var recipeBuilder = event.recipes.gtceu[recipeTypeKey](recipeName);
-        .itemInputs("2x gtceu:heavy_glugg_goo_gem")
-        .inputFluids("gtceu:concentrated_glugg_brine 200")
-        .outputFluids("gtceu:steam 500","gtceu:salt_water 200","gtceu:oil 50")
-        .itemOutputs("1x gtceu:heavy_glugg_goo_gem")
-        .duration(global.pvHelpers.ticksToSeconds(durationseconds))
-        .EUt(global.pvHelpers.constVoltages(voltage))
-        .circuit
+        return recipeBuilder
     };};

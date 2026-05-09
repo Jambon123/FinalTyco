@@ -1,42 +1,36 @@
 ServerEvents.recipes(event => {
+    const gtRecipe = global.pvHelpers.easyGTRecipe(event)
+
     event.remove({id: "gtceu:macerator/macerate_noom_block"})
     
-    event.recipes.gtceu.forge_hammer("hammer_moon_stone_to_sand")
-        .itemInputs("1x genesis:moon_stone")
-        .itemOutputs("2x genesis:moon_sand")
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.LV])
+    gtRecipe("forge_hammer","hammer_moon_stone_to_sand", 10, "lva", null,
+        "1x genesis:moon_stone", null, //Inputs
+        "2x genesis:moon_sand", null //Outputs
+    )
 
-    event.recipes.gtceu.forge_hammer("hammer_moon_sand_to_dust")
-        .itemInputs("1x genesis:moon_sand")
-        .itemOutputsRanged("gtceu:noom_dust", 4,5)
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.LV])
+    gtRecipe("forge_hammer", "hammer_moon_sand_to_dust", 10, "lva", null,
+        "1x genesis:moon_sand", null, //Inputs
+        null, null //Outputs
+    ).itemOutputsRanged("gtceu:noom_dust", 4,5)
 
-    event.recipes.gtceu.centrifuge("centrifuge_moon_dust_to_dusts")
-        .itemInputs("3x gtceu:noom_dust")
-        .itemOutputs("2x gtceu:dark_noom_dust", "1x gtceu:light_noom_dust")
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.LV])
+    gtRecipe("centrifuge", "centrifuge_moon_dust_to_dusts", 10, "lva", null,
+        "3x gtceu:noom_dust", null, //Inputs
+        ["2x gtceu:dark_noom_dust", "1x gtceu:light_noom_dust"], null //Outputs
+    )
 
-    event.recipes.gtceu.electrolyzer("decomposition_dark_moon_dust_to_gtregs")
-        .itemInputs("9x gtceu:dark_noom_dust")
-        .itemOutputs("4x gtceu:stone_dust", "2x gtceu:chromium_dust", "1x gtceu:iron_dust", "1x gtceu:aluminium_dust", "1x gtceu:uranium_dust")
-        .duration(10 * 20)
-        .circuit(0)
-        .EUt(GTValues.VA[GTValues.LV])
+    gtRecipe("electrolyzer", "decomposition_dark_moon_dust_to_gtregs", 10, "lva", 0,
+        "9x gtceu:dark_noom_dust", null, //Inputs
+        ["4x gtceu:stone_dust", "2x gtceu:chromium_dust", "1x gtceu:iron_dust", "1x gtceu:aluminium_dust", "1x gtceu:uranium_dust"], null //Outputs
+    )
 
-    event.recipes.gtceu.electrolyzer("decomposition_dark_moon_dust_to_gt_and_crowns")
-        .itemInputs("9x gtceu:dark_noom_dust")
-        .itemOutputs("4x gtceu:stone_dust", "2x gtceu:chromium_dust", "1x gtceu:iron_dust", "1x gtceu:aluminium_dust", "1x crowns:natural_uranium_nugget")
-        .duration(10 * 20)
-        .circuit(1)
-        .EUt(GTValues.VA[GTValues.LV])
+    gtRecipe("electrolyzer", "decomposition_dark_moon_dust_to_gt_and_crowns", 10, "lva", 1,
+        "9x gtceu:dark_noom_dust", null, //Inputs
+        ["4x gtceu:stone_dust", "2x gtceu:chromium_dust", "1x gtceu:iron_dust", "1x gtceu:aluminium_dust", "1x crowns:natural_uranium_nugget"], null //Outputs
+    )
 
-    event.recipes.gtceu.electrolyzer("decomposition_light_moon_dust")
-        .itemInputs("5x gtceu:light_noom_dust")
-        .itemOutputs("2x gtceu:stone_dust", "2x gtceu:silicon_dust", "1x gtceu:noom_goo_gem")
-        .outputFluids(Fluid.of("gtceu:liquid_helium", 300))
-        .duration(10 * 20)
-        .EUt(GTValues.VA[GTValues.LV])
+    gtRecipe("electrolyzer", "decomposition_light_moon_dust", 10, "lva", null,
+        "5x gtceu:light_noom_dust", null, //Inputs
+        ["2x gtceu:stone_dust", "2x gtceu:silicon_dust", "1x gtceu:noom_goo_gem"], "gtceu:liquid_helium 300" //Outputs
+    )
+
 })
