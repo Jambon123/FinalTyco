@@ -33,4 +33,10 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .EUt(GTValues.VA[GTValues.LV])
 
+    event.recipes.gtceu.electrolyzer("decomposition_light_moon_dust")
+        .itemInputs("5x gtceu:light_noom_dust")
+        .itemOutputs("2x gtceu:stone_dust", "2x gtceu:silicon_dust", "1x gtceu:noom_goo_gem")
+        .outputFluids(Fluid.of("gtceu:liquid_helium", 300))
+        .duration(10 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
 })
