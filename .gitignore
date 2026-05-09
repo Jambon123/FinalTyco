@@ -22,3 +22,4 @@ config/embeddium-fingerprint.json
 config/worldedit
 config/worldedit/worldedit.properties
 config/embeddium-fingerprint.json
+/config/worldedit/worldedit.properties

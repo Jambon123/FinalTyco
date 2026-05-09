@@ -86,6 +86,10 @@ global.pvHelpers.getIcon = function(iconSet) {
     return ICON_MAP[key];
 }
 
+global.pvHelpers.ticksToSeconds = function(ticks) {
+    return ticks * 20
+}
+
 global.pvHelpers.resolveFlags = function resolveFlags() {
     var flagArray = [];
     for (var argIndex = 0; argIndex < arguments.length; argIndex++) {
@@ -121,8 +125,7 @@ global.pvHelpers.easyElement = function(event) {
             .symbol(symbol)
             .protons(proton).neutrons(neutron)
             .halfLifeSeconds(halflife).decayTo(decayproduct)
-            .isIsotope(isotopic);
-        
+            .isIsotope(isotopic);        
 
 };};
 
