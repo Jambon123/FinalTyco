@@ -1,12 +1,90 @@
 {
+	autofocus_id: "76C49499415AEC43"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	filename: "periodic_table"
 	group: ""
 	icon: "sgjourney:archeology_table"
 	id: "21ED2B222A34C52D"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "747C4B97F32070AB"
+			tasks: [{
+				id: "1673349CD19BE902"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			icon: "supplementaries:checker_block"
+			id: "76C49499415AEC43"
+			secret: true
+			tasks: [{
+				id: "4CD4B73C83C9A7D8"
+				title: "PLACEMENT"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "07B32E15C82D01A5"
+			tasks: [{
+				id: "6AB8D265F1B4379B"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.5d
+		}
+		{
+			id: "065E066D7244BCEB"
+			tasks: [{
+				id: "46A0BF19086C8E69"
+				item: "gtceu:helium_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			icon: "gtceu:lithium_dust"
+			id: "7B4841454F522B3A"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "77E5418FB762E77B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/lithium)"
+						}
+					}
+					title: "Any #forge:ingots/lithium"
+					type: "item"
+				}
+				{
+					id: "68F960EF908C84D1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:dusts/lithium)"
+						}
+					}
+					title: "Any #forge:dusts/lithium"
+					type: "item"
+				}
+			]
+			title: "Lithium"
+			x: -10.0d
+			y: -3.5d
+		}
+	]
 	title: "Periodic Table"
 }

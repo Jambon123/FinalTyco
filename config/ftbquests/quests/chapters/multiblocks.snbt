@@ -1,11 +1,55 @@
 {
+	autofocus_id: "367E83F445BD9475"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	filename: "multiblocks"
 	group: "01C3A619010E40A6"
 	id: "693CF10E8789736C"
 	order_index: 11
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "46435638199708D6"
+			tasks: [{
+				id: "30E6B947C2D29E67"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "56BA5C469BE8485F"
+			tasks: [{
+				id: "080A4AA9560C7C97"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "7159A44C922C9A74"
+			tasks: [{
+				id: "5E4859420B60FE18"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			icon: "supplementaries:checker_block"
+			id: "367E83F445BD9475"
+			secret: true
+			tasks: [{
+				id: "020437662CFEA54C"
+				title: "PLACEMENT"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+	]
 	title: "Multiblocks"
 }
