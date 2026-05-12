@@ -2,21 +2,22 @@
 GTCEuStartupEvents.registry('gtceu:element', event => {
     const elem = global.pvHelpers.easyElement(event);
 
-    elem("energium", "⚡", -1, -1, -1, null, false);
-    elem("engeriophage", "ð", -1, -1, -1, null, false);
     elem("anulium", "ø", -1, -1, -1, null, false);
     elem("gurglium", "Þ", -1, -1, -1, null, false);
-    elem("primordium", "¤", -1, -1, -1, null, false)
+    elem("primordium", "¤", -1, -1, -1, null, false);
+    elem("energium", "⚡", -1, -1, -1, null, false);
+    elem("engeriophage", "ð", -1, -1, -1, null, false);
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     //Materials of Elements
     const elemmat = global.pvHelpers.elementalMaterial(event);
-    elemmat("energium")
-    elemmat("engeriophage")
     elemmat("anulium")
     elemmat("gurglium")
     elemmat("primordium")
+    elemmat("energium")
+    elemmat("engeriophage")
+
 
     //Materials with Components
     event.create("test")

@@ -90,6 +90,16 @@ global.pvHelpers.secondsToTicks = function(ticks) {
     return ticks * 20
 }
 
+global.pvHelpers.assureArray = function(assurance) {
+    if (assurance === undefined || assurance === null) {
+        return [];
+    }
+    if (Array.isArray(assurance)) {
+        return assurance;
+    }
+    return [assurance]
+}
+
 global.pvHelpers.resolveFlags = function resolveFlags() {
     var flagArray = [];
     for (var argIndex = 0; argIndex < arguments.length; argIndex++) {
@@ -142,3 +152,12 @@ global.pvHelpers.elementalMaterial = function(event) {
             .color(colour)
             .secondaryColor(secondcolour)
     };};
+
+global.pvHelpers.setupMaterial = function(event) {
+    return function(name, type, icon, colour1, colour2, components, harvest, burn, fluidburn) {
+        var materialBuilder = event.create(name);
+        return event.create(name)
+            [type](harvest)
+            .color(colour1).secondaryColor(colour2)
+            .iconSet(global.pvHelpers.getIcon(icon))
+};};

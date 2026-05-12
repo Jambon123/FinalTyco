@@ -70,16 +70,6 @@ var VOLTAGE_MAP = {
     "maxha": GTValues.VHA[GTValues.MAX],
 }
 
-function assureArray(assurance) {
-    if (assurance === undefined || assurance === null) {
-        return [];
-    }
-    if (Array.isArray(assurance)) {
-        return assurance;
-    }
-    return [assurance]
-}
-
 global.pvHelpers.constVoltages = function(getVoltage) {
     if (typeof getVoltage === 'undefined') {
         voltage = GTValues.VA[GTValues.LV]
@@ -101,10 +91,10 @@ global.pvHelpers.easyGTRecipe = function(event) {
 
         var recipeTypeKey = String(recipetype).trim().toLowerCase().replace(/\s+/g, '_').replace(/-/g, '_');
         var recipeBuilder = event.recipes.gtceu[recipeTypeKey](recipename);
-        var normalisedInputItems = assureArray(inputitem)
-        var normalisedInputFluids = assureArray(inputfluid)
-        var normalisedOutputItems = assureArray(outputitem)
-        var normalisedOutputFluids = assureArray(outputfluid)
+        var normalisedInputItems = global.pvHelpers.assureArray(inputitem)
+        var normalisedInputFluids = global.pvHelpers.assureArray(inputfluid)
+        var normalisedOutputItems = global.pvHelpers.assureArray(outputitem)
+        var normalisedOutputFluids = global.pvHelpers.assureArray(outputfluid)
 
         recipeBuilder.duration(global.pvHelpers.secondsToTicks(durationseconds))
         if(voltage) {recipeBuilder.EUt(global.pvHelpers.constVoltages(voltage))}
