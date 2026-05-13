@@ -179,7 +179,6 @@
 		}
 		{
 			dependencies: ["5ED279C96D8FB4CC"]
-			hide_dependent_lines: true
 			icon: "gtceu:steel_ingot"
 			id: "01BCAE9584B6FF4A"
 			shape: "rsquare"

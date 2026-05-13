@@ -6,7 +6,22 @@
 	icon: "ae2:controller"
 	id: "60C8432DAAC18CA9"
 	order_index: 1
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [{
+		id: "1049237B8A90CEE9"
+		linked_quest: "01BCAE9584B6FF4A"
+		x: 0.0d
+		y: -0.5d
+	}]
+	quests: [{
+		dependencies: ["01BCAE9584B6FF4A"]
+		id: "6DC4A84596B78FAF"
+		tasks: [{
+			id: "19BC5FD425BC0049"
+			item: "ae2:energy_acceptor"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 1.0d
+	}]
 	title: "AE2"
 }
