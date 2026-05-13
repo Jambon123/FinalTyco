@@ -126,4 +126,3 @@ global.pvHelpers.swapAndeasyGTRecipe = function(event) {
     }
 }
 
-

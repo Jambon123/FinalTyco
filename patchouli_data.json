@@ -1,5 +1,29 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "botania:lexicon": {
+      "viewedEntries": [
+        "botania:extrabotanies/aerialite",
+        "botania:extrabotanies/das_rheingold",
+        "botania:extrabotanies/infinite_wine",
+        "botania:extrabotanies/mana_ring_master",
+        "botania:extrabotanies/orichalcos",
+        "botania:extrabotanies/void_archives",
+        "botania:extrabotanies/yin_and_yang",
+        "botania:extrabotanies/universe_medium",
+        "botania:extrabotanies/zadkiel",
+        "botania:extrabotanies/dimension_catalyst",
+        "botania:alfhomancy/elf_resources",
+        "botania:basics/pure_daisy",
+        "botania:mana/mana_tablet",
+        "botania:devices/canopy_drum",
+        "botania:devices/craft_crate",
+        "botania:devices/pylon",
+        "botania:mana/pool"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }
