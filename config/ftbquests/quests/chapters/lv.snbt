@@ -13,6 +13,28 @@
 		x: 0.75d
 		y: 2.25d
 	}]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["674FE359689DED19"]
+			id: "492A1836D10E2A38"
+			tasks: [{
+				id: "10577F8111CDAE97"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			id: "674FE359689DED19"
+			tasks: [{
+				id: "67C904811AAF9081"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+	]
 	title: "LV"
 }
