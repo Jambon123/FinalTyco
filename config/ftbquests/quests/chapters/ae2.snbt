@@ -12,16 +12,39 @@
 		x: 0.0d
 		y: -0.5d
 	}]
-	quests: [{
-		dependencies: ["01BCAE9584B6FF4A"]
-		id: "6DC4A84596B78FAF"
-		tasks: [{
-			id: "19BC5FD425BC0049"
-			item: "ae2:energy_acceptor"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 1.0d
-	}]
+	quests: [
+		{
+			dependencies: ["01BCAE9584B6FF4A"]
+			id: "6DC4A84596B78FAF"
+			subtitle: "Not Technically Required"
+			tasks: [{
+				id: "19BC5FD425BC0049"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "464861412D2582F9"
+			tasks: [{
+				id: "435CD8B7BCDEE671"
+				item: "ae2:quartz_glass"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "0F8C21F783CA8808"
+			tasks: [{
+				id: "048FD8F11EA8D2E4"
+				item: "ae2:quartz_vibrant_glass"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+	]
 	title: "AE2"
 }
