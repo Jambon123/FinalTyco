@@ -1,4 +1,4 @@
-//priority: 1
+//priority: 10000
 
 global.pvHelpers = global.pvHelpers || {};
 
@@ -72,7 +72,7 @@ var VOLTAGE_MAP = {
 
 global.pvHelpers.constVoltages = function(getVoltage) {
     if (typeof getVoltage === 'undefined') {
-        voltage = GTValues.VA[GTValues.LV]
+        voltage = GTValues.VA[GTValues.MAX]
         console.warn('[pv] constVoltages called with empty value');
         return voltage;
     };
@@ -108,3 +108,22 @@ global.pvHelpers.easyGTRecipe = function(event) {
 
         return recipeBuilder
     };};
+
+global.pvHelpers.massRemoveRecipesBy = function(event, field, values) {
+    values.forEach(function(value) {
+        var criteria = {}
+        criteria[field] = value
+        event.remove(criteria)
+})}
+
+global.pvHelpers.swapAndeasyGTRecipe = function(event) {
+    return function(keep, oldrecipetype, oldrecipename, recipetype, durationseconds, voltage, circuit, inputitem, inputfluid, outputitem, outputfluid) {
+        if(!keep) {
+            event.remove({id: `gtceu:${oldrecipetype}/${oldrecipename}`})
+            console.info(`[pv] Removing ${oldrecipename} for ${oldrecipetype}`)}
+        let newrecipename = `converted_${oldrecipetype}_to_${recipetype}_${oldrecipename}`
+        global.pvHelpers.easyGTRecipe(event)(recipetype, newrecipename, durationseconds, voltage, circuit, inputitem, inputfluid, outputitem, outputfluid)
+    }
+}
+
+

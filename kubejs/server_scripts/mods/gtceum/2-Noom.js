@@ -1,3 +1,4 @@
+//priority: 103
 ServerEvents.recipes(event => {
     const gtRecipe = global.pvHelpers.easyGTRecipe(event)
 

@@ -1,4 +1,4 @@
-//priority: 1
+//priority: 10000
 
 global.pvHelpers = global.pvHelpers || {};
 
@@ -81,13 +81,12 @@ var FLAG_MAP = {
     high_sifter: GTMaterialFlags.HIGH_SIFTER_OUTPUT,
 }
 
-global.pvHelpers.getIcon = function(iconSet) {
-    var key = iconSet.toUpperCase();
-    return ICON_MAP[key];
+global.pvHelpers.secondsToTicks = function(seconds) {
+    return Math.max(1, seconds * 20)
 }
 
-global.pvHelpers.secondsToTicks = function(ticks) {
-    return ticks * 20
+global.pvHelpers.ticksToSeconds = function(ticks) {
+    return ticks / 20
 }
 
 global.pvHelpers.assureArray = function(assurance) {
@@ -98,6 +97,11 @@ global.pvHelpers.assureArray = function(assurance) {
         return assurance;
     }
     return [assurance]
+}
+
+global.pvHelpers.getIcon = function(iconSet) {
+    var key = iconSet.toUpperCase();
+    return ICON_MAP[key];
 }
 
 global.pvHelpers.resolveFlags = function resolveFlags() {

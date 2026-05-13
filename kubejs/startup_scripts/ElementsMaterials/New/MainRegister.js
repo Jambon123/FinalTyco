@@ -1,4 +1,4 @@
-//priority: 5
+//priority: 9999
 GTCEuStartupEvents.registry('gtceu:element', event => {
     const elem = global.pvHelpers.easyElement(event);
 
