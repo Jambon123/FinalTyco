@@ -9,8 +9,8 @@
 	quest_links: [{
 		id: "1049237B8A90CEE9"
 		linked_quest: "01BCAE9584B6FF4A"
-		x: 0.0d
-		y: -0.5d
+		x: 1.5d
+		y: 0.0d
 	}]
 	quests: [
 		{
@@ -22,28 +22,101 @@
 				item: "ae2:energy_acceptor"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
+			dependencies: ["0A83941757CA15C3"]
 			id: "464861412D2582F9"
 			tasks: [{
 				id: "435CD8B7BCDEE671"
 				item: "ae2:quartz_glass"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.5d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["464861412D2582F9"]
 			id: "0F8C21F783CA8808"
 			tasks: [{
 				id: "048FD8F11EA8D2E4"
 				item: "ae2:quartz_vibrant_glass"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "733D1A713033D232"
+			tasks: [{
+				id: "2F75751CDFA29F0E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32B6A8C503423EB7"]
+			id: "7459CFF04CD106BB"
+			tasks: [{
+				id: "731FB75E6C3CDA00"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"01BCAE9584B6FF4A"
+				"733D1A713033D232"
+			]
+			id: "32B6A8C503423EB7"
+			tasks: [
+				{
+					id: "717450A16EB608EF"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "49E020CB288E1B28"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+			]
+			title: "Certus Processing"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["32B6A8C503423EB7"]
+			id: "0A83941757CA15C3"
+			tasks: [{
+				id: "1A457F77CFE13A09"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:dusts/certus_quartz)"
+					}
+				}
+				title: "Any #forge:dusts/certus_quartz"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			id: "7EFF2F3E5782E466"
+			tasks: [{
+				id: "56CD5C2C2B8CDD61"
+				item: "ae2:calculation_processor_press"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
 		}
 	]
 	title: "AE2"
