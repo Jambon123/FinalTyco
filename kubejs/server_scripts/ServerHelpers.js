@@ -86,7 +86,7 @@ global.pvHelpers.constVoltages = function(getVoltage) {
 global.pvHelpers.easyGTRecipe = function(event) {
     return function(recipetype, recipename, durationseconds, voltage, circuit, inputitem, inputfluid, outputitem, outputfluid) {
         if (typeof recipetype === 'undefined' || recipetype === null) recipetype = "fermenter";
-        if (typeof recipename === 'undefined' || recipename === null) recipename = recipename = `${recipetype}_broken_recipe_${Date.now()}`;
+        if (typeof recipename === 'undefined' || recipename === null) recipename = `${recipetype}_broken_recipe_${Date.now()}`;
         if (typeof durationseconds === 'undefined' || durationseconds === null) durationseconds = 10;
 
         var recipeTypeKey = String(recipetype).trim().toLowerCase().replace(/\s+/g, '_').replace(/-/g, '_');
