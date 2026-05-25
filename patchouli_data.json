@@ -20,7 +20,8 @@
         "botania:devices/canopy_drum",
         "botania:devices/craft_crate",
         "botania:devices/pylon",
-        "botania:mana/pool"
+        "botania:mana/pool",
+        "botania:extrabotanies/gaia_3rd"
       ],
       "bookmarks": [],
       "completedManualQuests": []
