@@ -1,9 +1,17 @@
 //priority: 5
+GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {
+    event.create('Noom')
+    .targets('#minecraft:stone_ore_replaceables', 'genesis:moon_stone') // [*] 
+        .dimensions('genesis:moon') // [*]
+})  
+
 GTCEuServerEvents.oreVeins(event => {
 //NOTE: 1-Terth
+// 
         public static final GTOreDefinition MAGNETITE_VEIN = create("magnetite_vein", vein -> vein
             .clusterSize(UniformInt.of(38, 44)).density(0.15f).weight(30)
             .layer(WorldGenLayers.Moon_Stone)
+            vein.layer("Noom")
             .heightRangeUniform(20, 80)
             .biomes(BiomeTags.IS_MOON)
             .layeredVeinGenerator(generator -> generator

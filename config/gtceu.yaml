@@ -151,7 +151,7 @@ worldgen:
 
     # Distance between bedrock ore veins in chunks, if enabled.
     # Default: 16
-    bedrockOreDistance: 16
+    bedrockOreDistance: 9
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
