@@ -22,8 +22,8 @@
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.0d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			id: "674FE359689DED19"
@@ -32,8 +32,8 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.5d
+			x: 4.0d
+			y: -5.0d
 		}
 	]
 	title: "LV"

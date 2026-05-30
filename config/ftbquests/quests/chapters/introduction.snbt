@@ -90,7 +90,7 @@
 			id: "449D2F50D069BF5F"
 			min_width: 4
 			rewards: [{
-				count: 2
+				count: 8
 				id: "634DCBA192CEA48D"
 				item: "farmersdelight:apple_pie_slice"
 				type: "item"

@@ -2,5 +2,13 @@
     "material.gtceu.pure_energium": "Pure Energium",
     "material.gtceu.infected_energium": "Infected Energium",
     "material.gtceu.infected_depleted_energium": "Infected Depleted Energium",
-    "material.gtceu.depleted_energium": "Depleted Energium"
+    "material.gtceu.depleted_energium": "Depleted Energium",
+    "material.gtceu.noom": "Noom",
+    "material.gtceu.light_noom": "Light Noom",
+    "material.gtceu.dark_noom": "Dark Noom",
+    "material.gtceu.noom_goo": "Noom Goo",
+    "material.gtceu.glugg_brine": "Glugg Brine",
+    "material.gtceu.concentrated_glugg_brine": "Concentrated Glugg Brine",
+    "material.gtceu.heavy_glugg_goo": "Heavy Glugg Goo",
+    "material.gtceu.glugg_goo": "Glugg Goo"
 }

@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Find a tree any tree."]
+			description: ["Find a tree, any tree."]
 			icon: "minecraft:oak_log"
 			id: "516A537A03959257"
 			rewards: [{
@@ -18,6 +18,8 @@
 				item: "minecraft:apple"
 				type: "item"
 			}]
+			shape: "circle"
+			size: 2.0d
 			tasks: [{
 				count: 12L
 				id: "4945A1FE43E1330F"
@@ -33,7 +35,7 @@
 			}]
 			title: "Get Wood"
 			x: 0.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -54,8 +56,8 @@
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
-			x: -3.009298693902174d
-			y: 3.2655260419403476d
+			x: -3.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -95,6 +97,7 @@
 		{
 			dependencies: ["516A537A03959257"]
 			description: ["Find a rubber tree and collect it's saplings, you'll be needing a lot of the resin from this tree later"]
+			hide_dependent_lines: true
 			id: "5F1347E2B7E78051"
 			rewards: [{
 				count: 8
@@ -124,8 +127,8 @@
 				item: "gtceu:ulv_machine_hull"
 				type: "item"
 			}]
-			x: 2.9858736936601815d
-			y: 3.231320646956924d
+			x: 3.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -207,8 +210,8 @@
 				item: "tfmg:creosote_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.5d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["48504580092925EC"]
@@ -516,7 +519,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["18BAA54541E2784A"]
+			dependencies: [
+				"18BAA54541E2784A"
+				"5F1347E2B7E78051"
+			]
+			dependency_requirement: "one_completed"
 			id: "04DB024CE4263452"
 			tasks: [{
 				id: "774FE01672B616AF"
@@ -595,8 +602,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0092986939021813d
-			y: 0.5308321643893237d
+			x: -3.75d
+			y: 0.625d
 		}
 		{
 			dependencies: [
@@ -610,8 +617,8 @@
 				item: { Count: 16, id: "gtceu:treated_wood_planks" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
+			x: -3.7632822391013434d
+			y: 2.047973360366015d
 		}
 	]
 	title: "Steam"
