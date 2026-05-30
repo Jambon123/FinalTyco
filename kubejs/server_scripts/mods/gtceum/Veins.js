@@ -42,7 +42,6 @@ GTCEuServerEvents.oreVeins(event => {
         // Add one or more type of surface indicator to the vein:
         vein.addIndicator(magnetite) // 
     })
-})
 
 //NOTE: 3: Glugg
 

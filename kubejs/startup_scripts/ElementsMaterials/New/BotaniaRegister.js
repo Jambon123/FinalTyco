@@ -20,6 +20,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components("1x iron", "3x mana")
         .color(0x1f20b7).secondaryColor(0xb3dbf5)
         .iconSet(global.pvHelpers.getIcon("SHINY"))
+
+    event.create("mana_diamond")
+        .ingot()
+        .components("1x diamond", "10x mana")
+        .color(0x1f20b7).secondaryColor(0xb3dbf5)
+        .iconSet(global.pvHelpers.getIcon("SHINY"))
+
+    event.create("mana_pearl")
+        .gem()
+        .components("1x ender_pearl", "6x mana")
+        .color(0x1f20b7).secondaryColor(0xb3dbf5)
+        .iconSet(global.pvHelpers.getIcon("SHINY"))
+
+    event.create("terraasteel")
+        .ingot()
+        .components("1x manasteel", "1x mana pearl", "1x mana diamond", "500x mana")
+        .color(0x5cc154).secondaryColor(0x021c0d)
+        .iconSet(global.pvHelpers.getIcon("SHINY"))
 })
 
 GTCEuStartupEvents.materialModification(event => {
