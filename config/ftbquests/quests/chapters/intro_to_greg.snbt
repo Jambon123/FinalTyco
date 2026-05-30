@@ -91,8 +91,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -110,8 +110,8 @@
 				item: "gtceu:rubber_sapling"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -128,7 +128,7 @@
 				type: "item"
 			}]
 			x: 3.75d
-			y: 3.75d
+			y: 4.375d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -185,7 +185,7 @@
 			icon: "gtceu:steel_ingot"
 			id: "01BCAE9584B6FF4A"
 			shape: "rsquare"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "5862F70FF95BB075"
 				item: {
@@ -200,7 +200,7 @@
 			}]
 			title: "Steel"
 			x: 0.0d
-			y: -5.0d
+			y: -5.25d
 		}
 		{
 			dependencies: ["05090722B81B0C17"]
@@ -286,7 +286,7 @@
 			]
 			title: "Essential Tools"
 			x: -1.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["757E17862DBB5BC0"]
@@ -346,8 +346,8 @@
 				}
 			]
 			title: "Extra Tools"
-			x: -3.0d
-			y: 5.0d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["33E095F38FAE4256"]
@@ -368,7 +368,7 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -1.0d
 		}
 		{
@@ -412,7 +412,7 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -432,7 +432,7 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 2.5d
+			x: 3.0d
 			y: 1.0d
 		}
 		{
@@ -443,7 +443,7 @@
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -457,7 +457,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -470,8 +470,8 @@
 				item: "gtceu:red_alloy_single_cable"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
+			x: 3.7612362540613518d
+			y: 1.9963539745857872d
 		}
 		{
 			dependencies: ["219D33A2215C17FF"]
@@ -482,7 +482,7 @@
 				item: "gtceu:rubber_plate"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.5d
 			y: 1.0d
 		}
 		{
@@ -493,8 +493,8 @@
 				item: "gtceu:ulv_machine_casing"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
@@ -504,18 +504,7 @@
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.0d
-		}
-		{
-			description: ["Go to the &4Nether&r to find &eSulfur Ore&r."]
-			id: "41EBAA80DA42249E"
-			tasks: [{
-				id: "7F94A9A0EABA816D"
-				item: "gtceu:sulfur_dust"
-				type: "item"
-			}]
-			x: 5.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -530,14 +519,13 @@
 				item: "gtceu:raw_rubber_dust"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: [
 				"03C01C150C5D643F"
 				"04DB024CE4263452"
-				"41EBAA80DA42249E"
 				"01BCAE9584B6FF4A"
 			]
 			id: "219D33A2215C17FF"
@@ -547,7 +535,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -619,6 +607,101 @@
 			}]
 			x: -3.7632822391013434d
 			y: 2.047973360366015d
+		}
+		{
+			dependencies: [
+				"6FB439727C36EE6E"
+				"4F87618B2F436D04"
+			]
+			id: "01FD34EFADB57F0B"
+			tasks: [{
+				id: "3BD7E5E5BF61716C"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["01FD34EFADB57F0B"]
+			id: "11DD878249AB88F0"
+			tasks: [
+				{
+					id: "1858702ACA2E22D0"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "133AFD606A5A79FE"
+					item: "botania:livingwood"
+					type: "item"
+				}
+			]
+			title: "It's Alive!"
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"32958E157A8534A8"
+				"4F87618B2F436D04"
+			]
+			id: "6FB439727C36EE6E"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "40B3686F6F923875"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			title: "Petal Apothecary"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"36C9E125DFDA7108"
+				"11DD878249AB88F0"
+			]
+			id: "43370FFC9A176F6C"
+			tasks: [{
+				id: "2343A05DBDB6AE60"
+				item: "gtceu:red_alloy_single_wire"
+				type: "item"
+			}]
+			title: "Supcon 1"
+			x: 3.787581700381196d
+			y: 5.691133426817927d
+		}
+		{
+			dependencies: ["516A537A03959257"]
+			id: "32958E157A8534A8"
+			tasks: [{
+				count: 16L
+				id: "0DFD8AC7E9C1ED67"
+				item: { Count: 16, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			id: "4F87618B2F436D04"
+			tasks: [{
+				id: "78B9AEA50DEA1AA4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(botania:petals)"
+					}
+				}
+				title: "Any #botania:petals"
+				type: "item"
+			}]
+			title: "Botania Petals"
+			x: 5.5d
+			y: 7.5d
 		}
 	]
 	title: "Steam"
