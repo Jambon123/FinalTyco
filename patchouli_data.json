@@ -21,7 +21,8 @@
         "botania:devices/craft_crate",
         "botania:devices/pylon",
         "botania:mana/pool",
-        "botania:extrabotanies/gaia_3rd"
+        "botania:extrabotanies/gaia_3rd",
+        "botania:misc/mana_drives"
       ],
       "bookmarks": [],
       "completedManualQuests": []

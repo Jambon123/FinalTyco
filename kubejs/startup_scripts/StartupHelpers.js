@@ -149,7 +149,7 @@ global.pvHelpers.elementalMaterial = function(event) {
         if (typeof secondcolour === 'undefined') secondcolour = 0x000000
         if (typeof element ===  'undefined') element = name
 
-        console.info(`[pv] Registering material ${name} with element ${element}.`)
+        console.info(`[pv] Initialising material ${name} with element ${element}.`)
 
         return event.create(name)
             .element(GTElements.get(element))
@@ -158,10 +158,50 @@ global.pvHelpers.elementalMaterial = function(event) {
     };};
 
 global.pvHelpers.setupMaterial = function(event) {
-    return function(name, type, icon, colour1, colour2, components, harvest, burn, fluidburn) {
+    return function(name, type, icon, colour1, colour2, harvest) {
         var materialBuilder = event.create(name);
-        return event.create(name)
-            [type](harvest)
-            .color(colour1).secondaryColor(colour2)
-            .iconSet(global.pvHelpers.getIcon(icon))
+
+        console.log(`[pv] Making Material ${name} of type ${type}`)
+
+        if (typeof materialBuilder[type] === "function") {
+            if (typeof harvest !== "undefined") materialBuilder[type](harvest)
+            else materialBuilder[type]()
+        }
+
+        if (typeof colour1 !== "undefined") materialBuilder.color(colour1)
+        if (typeof colour2 !== "undefined") materialBuilder.secondaryColor(colour2)
+        if (icon !== "undefined") materialBuilder.iconSet(global.pvHelpers.getIcon(icon))
+
+        return materialBuilder
 };};
+
+global.pvHelpers.ignoreForms = (matname, mapping) => {
+    GTCEuStartupEvents.materialModification(event => {
+        const mat = GTMaterialRegistry.getMaterial(matname.toString())
+        for (const tag in mapping) {
+            const prefix = TagPrefix[tag]
+            console.info(`[pv] Trying to remove ${tag} for ${mat}`)
+            if (!prefix) {
+                console.error(`[pv] Unknown TagPrefix: ${tag}`)
+                continue
+            }
+            prefix.setIgnored(mat)
+        }
+    })
+
+    StartupEvents.postInit(event => {
+        const mat = GTMaterialRegistry.getMaterial(matname.toString())
+        for (const tag in mapping) {
+            const prefix = TagPrefix[tag]
+            const id = mapping[tag]
+            console.log(`[pv] Linking ${tag} of ${mat} to ${id}`)
+
+            if (!prefix) {
+                console.error(`[pv] Unknown TagPrefix: ${tag}`)
+                continue
+            }
+
+            if (tag === "block") {prefix.setIgnoredBlock(mat, id)} 
+            else {prefix.setIgnored(mat, id)}
+        }
+})}

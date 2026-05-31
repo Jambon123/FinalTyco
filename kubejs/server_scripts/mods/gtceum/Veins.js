@@ -1,11 +1,5 @@
 //priority: 5
-GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {
-    event.create('Noom')
-    .targets('#minecraft:stone_ore_replaceables', 'genesis:moon_stone') // [*] 
-        .dimensions('genesis:moon') // [*]
-})  
-
-//NOTE: 1-Terth
+//NOTE: 1-Avena
 // 
 
 //NOTE: 1.5-Orbit

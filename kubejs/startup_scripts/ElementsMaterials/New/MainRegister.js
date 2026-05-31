@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components("1x energium", "1x engeriophage", "1x anulium", "1x gurglium", "1x primordium")
         .color(0x111111)
 
-//NOTE: 1-Terth
+//NOTE: 1-Avena
 
 
 //NOTE: 1.5-Orbit
