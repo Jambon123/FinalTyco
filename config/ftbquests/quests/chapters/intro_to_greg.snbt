@@ -19,7 +19,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				count: 12L
 				id: "4945A1FE43E1330F"
@@ -56,8 +56,8 @@
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 3.75d
+			x: -3.010812887015014d
+			y: 3.756996925914933d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -127,8 +127,8 @@
 				item: "gtceu:ulv_machine_hull"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 4.375d
+			x: 3.75177200954721d
+			y: 3.3944290742149263d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -140,7 +140,7 @@
 			}]
 			title: "Find Iron"
 			x: 0.0d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -201,17 +201,6 @@
 			title: "Steel"
 			x: 0.0d
 			y: -5.25d
-		}
-		{
-			dependencies: ["05090722B81B0C17"]
-			id: "49A58A721A740131"
-			tasks: [{
-				id: "212B016D2BD38092"
-				item: "tfmg:creosote_bucket"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["48504580092925EC"]
@@ -286,7 +275,7 @@
 			]
 			title: "Essential Tools"
 			x: -1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["757E17862DBB5BC0"]
@@ -346,8 +335,8 @@
 				}
 			]
 			title: "Extra Tools"
-			x: -2.0d
-			y: 3.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["33E095F38FAE4256"]
@@ -368,8 +357,8 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: -1.2370255966386523d
+			y: -1.0715237518773435d
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
@@ -457,7 +446,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -474,7 +463,10 @@
 			y: 1.9963539745857872d
 		}
 		{
-			dependencies: ["219D33A2215C17FF"]
+			dependencies: [
+				"219D33A2215C17FF"
+				"0CA4EE0E8FD53640"
+			]
 			description: ["Rubber Ingots in an alloy smelter with a casting mold."]
 			id: "299026F0EA5596FF"
 			tasks: [{
@@ -493,8 +485,8 @@
 				item: "gtceu:ulv_machine_casing"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
@@ -504,8 +496,8 @@
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: 1.2915372862032513d
+			y: -1.0519971799176133d
 		}
 		{
 			dependencies: [
@@ -519,14 +511,13 @@
 				item: "gtceu:raw_rubber_dust"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 2.903782184162438d
+			y: -1.0519971799176133d
 		}
 		{
 			dependencies: [
 				"03C01C150C5D643F"
 				"04DB024CE4263452"
-				"01BCAE9584B6FF4A"
 			]
 			id: "219D33A2215C17FF"
 			tasks: [{
@@ -534,8 +525,8 @@
 				item: "gtceu:rubber_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.0d
+			x: 4.516027082121617d
+			y: -1.072405343182922d
 		}
 		{
 			dependencies: [
@@ -590,14 +581,11 @@
 					type: "item"
 				}
 			]
-			x: -3.75d
-			y: 0.625d
+			x: -2.9778051567799935d
+			y: 1.1677099369502315d
 		}
 		{
-			dependencies: [
-				"49A58A721A740131"
-				"05090722B81B0C17"
-			]
+			dependencies: ["05090722B81B0C17"]
 			id: "7CB274686431653B"
 			tasks: [{
 				count: 16L
@@ -605,8 +593,8 @@
 				item: { Count: 16, id: "gtceu:treated_wood_planks" }
 				type: "item"
 			}]
-			x: -3.7632822391013434d
-			y: 2.047973360366015d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -619,8 +607,8 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 6.0d
+			x: 5.314050007952588d
+			y: 5.688758219982319d
 		}
 		{
 			dependencies: ["01FD34EFADB57F0B"]
@@ -638,8 +626,8 @@
 				}
 			]
 			title: "It's Alive!"
-			x: 5.5d
-			y: 4.5d
+			x: 5.319921197944716d
+			y: 4.482847016954295d
 		}
 		{
 			dependencies: [
@@ -655,8 +643,8 @@
 				type: "item"
 			}]
 			title: "Petal Apothecary"
-			x: 4.0d
-			y: 7.0d
+			x: 3.6898496037116075d
+			y: 7.014418487856439d
 		}
 		{
 			dependencies: [
@@ -669,9 +657,9 @@
 				item: "gtceu:red_alloy_single_wire"
 				type: "item"
 			}]
-			title: "Supcon 1"
-			x: 3.787581700381196d
-			y: 5.691133426817927d
+			title: "ULV Superconductor"
+			x: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["516A537A03959257"]
@@ -686,6 +674,7 @@
 			y: 7.0d
 		}
 		{
+			icon: "botania:white_petal"
 			id: "4F87618B2F436D04"
 			tasks: [{
 				id: "78B9AEA50DEA1AA4"
@@ -700,9 +689,57 @@
 				type: "item"
 			}]
 			title: "Botania Petals"
-			x: 5.5d
-			y: 7.5d
+			x: 5.334458171217889d
+			y: 6.954064342431302d
+		}
+		{
+			dependencies: ["01BCAE9584B6FF4A"]
+			hide_dependency_lines: true
+			icon: "gtceu:plate_casting_mold"
+			id: "0CA4EE0E8FD53640"
+			tasks: [
+				{
+					id: "35B665FAC69B5CA1"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "29E23584E8C6282E"
+					item: "gtceu:ingot_casting_mold"
+					type: "item"
+				}
+				{
+					id: "2D3F7F1C315A7669"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Molds"
+			x: 5.378634234433605d
+			y: 1.96314886928716d
+		}
+		{
+			dependencies: ["18BAA54541E2784A"]
+			id: "3617466B7ED9EBBD"
+			tasks: [{
+				id: "33EB925D0938392C"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			x: 1.3027822138938205d
+			y: -2.4767436280770028d
+		}
+		{
+			dependencies: ["0CA4EE0E8FD53640"]
+			id: "505E26382B610759"
+			tasks: [{
+				id: "7A12715094ED3DF4"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 5.378634234433605d
+			y: 3.371312134593282d
 		}
 	]
-	title: "Steam"
+	title: "ULV"
 }

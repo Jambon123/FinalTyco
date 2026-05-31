@@ -5,7 +5,7 @@
 	filename: "multiblocks"
 	group: "01C3A619010E40A6"
 	id: "693CF10E8789736C"
-	order_index: 11
+	order_index: 12
 	quest_links: [
 		{
 			id: "6535A8023BCBCD64"
@@ -23,6 +23,12 @@
 			id: "1F9BF4A6A8B52ADD"
 			linked_quest: "5ED279C96D8FB4CC"
 			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "235EE340F16840FD"
+			linked_quest: "7D30E7B70AF93E66"
+			x: 3.0d
 			y: 0.5d
 		}
 	]

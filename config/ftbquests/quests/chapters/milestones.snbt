@@ -14,7 +14,7 @@
 		x: -6.0d
 		y: -4.0d
 	}]
-	order_index: 0
+	order_index: 11
 	quest_links: [
 		{
 			id: "02B5338085451830"
@@ -357,8 +357,8 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: -8.338394389649991d
-			y: -7.6500017628272445d
+			x: -8.0d
+			y: -8.5d
 		}
 		{
 			id: "1D2F12585BC49FD5"
