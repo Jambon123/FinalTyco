@@ -63,9 +63,9 @@
 			icon: "gtceu:solar_panel"
 			id: "651861AC4147862D"
 			shape: "octagon"
-			subtitle: "Free Space"
+			subtitle: "I assume Lagrange point imension go here"
 			tasks: [{
-				dimension: "genesis:moon"
+				dimension: "genesis:great_unknown"
 				id: "4DBFB287E74DC352"
 				type: "dimension"
 			}]

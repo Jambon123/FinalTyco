@@ -51,6 +51,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
+			subtitle: "unfortunately does not produce Coca-Cola or Cocaine"
 			tasks: [{
 				id: "7A5A366DABA5932D"
 				item: "gtceu:coke_oven"
@@ -68,6 +69,7 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
+			subtitle: "somehow more useful than any vanilla axe"
 			tasks: [{
 				id: "05F9F3F5A7919E12"
 				item: {
@@ -119,9 +121,16 @@
 				"17401511C8E6A160"
 				"36C9E125DFDA7108"
 			]
+			description: ["A machine casing for ULV, it has a few niche crafting uses, and you can make it if you are a completionist, otherwise completely useless"]
 			id: "78CD10B1A8950403"
+			rewards: [{
+				id: "5C1DCE68AA111D1D"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.25d
+			subtitle: "I asked to remove this quest and jambon said no"
 			tasks: [{
 				id: "08FC3999A2F31888"
 				item: "gtceu:ulv_machine_hull"
@@ -147,9 +156,11 @@
 				"46BBF90E490DDDCC"
 				"5DD9D595321F7E3F"
 			]
+			description: ["Bronze is the signature metal of the ULV/Steam tier, it will be used to make almost every functional item and is an alloy of copper and tin at a 3:1 ratio. You can make it either in a tinkers smeltery or by combining copper and tin dust made with the ingot and a mortar"]
 			id: "33E095F38FAE4256"
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Your first Alloy"
 			tasks: [{
 				id: "0557E2E30CEAEC2D"
 				item: "gtceu:bronze_ingot"
@@ -161,6 +172,7 @@
 		{
 			dependencies: ["516A537A03959257"]
 			id: "46BBF90E490DDDCC"
+			subtitle: "Fortunately higher quality than Ea-Nasir's"
 			tasks: [{
 				id: "0EBA290E2A0C4E37"
 				item: "minecraft:copper_ingot"
@@ -172,6 +184,7 @@
 		{
 			dependencies: ["516A537A03959257"]
 			id: "5DD9D595321F7E3F"
+			subtitle: "Gotten from the magical far away tin-land"
 			tasks: [{
 				id: "3E8C44CF9E6CB2B9"
 				item: "gtceu:tin_ingot"
@@ -186,6 +199,7 @@
 			id: "01BCAE9584B6FF4A"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "From the moment I understood the weakness of my flesh, it disgusted me. I craved the strength and certainty of steel."
 			tasks: [{
 				id: "5862F70FF95BB075"
 				item: {
@@ -204,6 +218,7 @@
 		}
 		{
 			dependencies: ["48504580092925EC"]
+			description: ["These are tools you should absolutely make to progress and are used in crafting recipes"]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_wrench"
@@ -223,6 +238,7 @@
 				}
 			}
 			id: "757E17862DBB5BC0"
+			subtitle: "Historians have no clue who made the first tongs"
 			tasks: [
 				{
 					id: "7322DDEB2A92706C"
@@ -279,6 +295,7 @@
 		}
 		{
 			dependencies: ["757E17862DBB5BC0"]
+			description: ["These tools while required for early-game progression have much more limited use and often do not require being made in large quantities until later"]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_wire_cutter"
@@ -341,6 +358,7 @@
 		{
 			dependencies: ["33E095F38FAE4256"]
 			id: "4095A5D8CB45C5DB"
+			subtitle: "https://en.wikipedia.org/wiki/Steam_(service)"
 			tasks: [{
 				id: "0C7E4CA5DC26C00B"
 				item: "gtceu:lp_steam_solid_boiler"
@@ -351,6 +369,7 @@
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
+			description: ["The macerator will be your first way of getting more out of your ores. Each ore you put in the macerator will get you two of the crushed version of that ore. depending on the which ore, you may be able to smelt that directly into its ingot form or you may need to process it further. Ores like redstone make 10 per ore in the macerator but then need to be forge hammered(or macerated again) and then washed (right click with an amount of the ore on a cauldron)"]
 			id: "31D19368E7DB975E"
 			tasks: [{
 				id: "6BB01053993E8E9B"
@@ -362,7 +381,9 @@
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
+			description: ["Its a compressor, you use it in compressor recipes to compress things, simple as"]
 			id: "698E3955AE934012"
+			subtitle: "Exactly like a cold compress"
 			tasks: [{
 				id: "08173BD8AC31E621"
 				item: "gtceu:lp_steam_compressor"
@@ -373,10 +394,12 @@
 		}
 		{
 			dependencies: ["698E3955AE934012"]
+			description: ["The blast furnace will be your final multiblock of the ULV/Steam Age, and used to craft Steel, the LV metal. It is recommended you craft multiple blast furnaces as the time it takes to make steel can be quite slow."]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "5ED279C96D8FB4CC"
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Primitive? Seems quite advanced to me"
 			tasks: [
 				{
 					id: "6938C81CFBC797FD"
@@ -395,6 +418,7 @@
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
+			description: ["This machine is primarily used for alloying metals and other materials together, can be used to make anything from invar to rubber and needed to progress through the pack"]
 			id: "03C01C150C5D643F"
 			tasks: [{
 				id: "3A2763A709B78CAE"
@@ -406,8 +430,10 @@
 		}
 		{
 			dependencies: ["03C01C150C5D643F"]
+			description: ["Important LV alloy used to make the ULV wire and LV circuits."]
 			icon: "gtceu:red_alloy_ingot"
 			id: "799A13880B2CB7C5"
+			subtitle: "Like a regular alloy but now red!"
 			tasks: [{
 				id: "3E7A5432AA70F150"
 				item: {
@@ -426,7 +452,9 @@
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
+			description: ["Cheapens the cost of making plates from 2:1 to 3:2, also useful for some other recipes"]
 			id: "282D0E85305D145E"
+			subtitle: "this one is really loud, use a GT hammer on it to mute it"
 			tasks: [{
 				id: "5C972417D0E39125"
 				item: "gtceu:lp_steam_forge_hammer"
@@ -454,6 +482,7 @@
 				"299026F0EA5596FF"
 			]
 			id: "034C664B9B7CDD97"
+			subtitle: "A way of transferring power, hooray! wait how do i get power?"
 			tasks: [{
 				id: "74625178AE288119"
 				item: "gtceu:red_alloy_single_cable"
@@ -479,6 +508,7 @@
 		}
 		{
 			dependencies: ["36C9E125DFDA7108"]
+			description: ["A machine hull used to make ULV casing"]
 			id: "17401511C8E6A160"
 			tasks: [{
 				id: "66DBD872EEA1CF92"
@@ -490,7 +520,9 @@
 		}
 		{
 			dependencies: ["4095A5D8CB45C5DB"]
+			description: ["Used for extracting raw rubber out of sticky resin, can also turn some materials into their fluid form."]
 			id: "18BAA54541E2784A"
+			subtitle: "Extractor? I hardly know'er!"
 			tasks: [{
 				id: "1CB82DD864101AAF"
 				item: "gtceu:lp_steam_extractor"
@@ -534,6 +566,7 @@
 				"4095A5D8CB45C5DB"
 			]
 			id: "07066C0E7BB681B2"
+			subtitle: "Fluid pipes, you transport fluid with them, need i say more?"
 			tasks: [{
 				id: "19537656B4AE3EC1"
 				item: {
@@ -553,6 +586,7 @@
 		}
 		{
 			dependencies: ["7CB274686431653B"]
+			description: ["This is the only multiblock you will make that works without you having to input anything inside! It is a passive source of water you can use to fuel your steam boilers in the early game"]
 			icon: "gtceu:primitive_pump"
 			id: "16D6871189E4AA83"
 			shape: "gear"
@@ -587,6 +621,7 @@
 		{
 			dependencies: ["05090722B81B0C17"]
 			id: "7CB274686431653B"
+			subtitle: "this stuff is used in the upcoming quest and also makes a neat building material"
 			tasks: [{
 				count: 16L
 				id: "2E8321824E917DBC"
@@ -601,6 +636,7 @@
 				"6FB439727C36EE6E"
 				"4F87618B2F436D04"
 			]
+			description: ["When stone or logs are put next to a pure daisy, it turns into livingrock and livingwood, simple enough"]
 			id: "01FD34EFADB57F0B"
 			tasks: [{
 				id: "3BD7E5E5BF61716C"
@@ -612,6 +648,7 @@
 		}
 		{
 			dependencies: ["01FD34EFADB57F0B"]
+			description: ["The aforementioned livingrock and livingwood can be seen here in their natural habitat as an arbitrary quest requirement."]
 			id: "11DD878249AB88F0"
 			tasks: [
 				{
@@ -634,9 +671,11 @@
 				"32958E157A8534A8"
 				"4F87618B2F436D04"
 			]
+			description: ["The petal apothecary will he how you make your early-game botania flowers, always requires water to start the craft and seeds to finish it. If you have not made a Lexica Botania yet and are using the pack questbook to explain this mod to you, WHY, MAKE THE LEXICA BOTANIA!!!"]
 			id: "6FB439727C36EE6E"
 			shape: "hexagon"
 			size: 1.0d
+			subtitle: "Double, double toil and trouble; Fire burn and caldron bubble."
 			tasks: [{
 				id: "40B3686F6F923875"
 				item: "botania:apothecary_default"
@@ -664,6 +703,7 @@
 		{
 			dependencies: ["516A537A03959257"]
 			id: "32958E157A8534A8"
+			subtitle: "surely you know how to get this right?"
 			tasks: [{
 				count: 16L
 				id: "0DFD8AC7E9C1ED67"
@@ -674,8 +714,10 @@
 			y: 7.0d
 		}
 		{
+			description: ["In order to get started you should collect a lot of mystical flowers. if you are having trouble finding specific colors, make floral fertilizer and use it on a patch of grass"]
 			icon: "botania:white_petal"
 			id: "4F87618B2F436D04"
+			subtitle: "Flower pixe princess manic dream girl vibes"
 			tasks: [{
 				id: "78B9AEA50DEA1AA4"
 				item: {
@@ -694,9 +736,11 @@
 		}
 		{
 			dependencies: ["01BCAE9584B6FF4A"]
+			description: ["Molds are useful for many things, primary turning a material into a desired shape via the use of an alloy smelter."]
 			hide_dependency_lines: true
 			icon: "gtceu:plate_casting_mold"
 			id: "0CA4EE0E8FD53640"
+			subtitle: "no not like the thing in bleu cheese"
 			tasks: [
 				{
 					id: "35B665FAC69B5CA1"
@@ -720,6 +764,7 @@
 		}
 		{
 			dependencies: ["18BAA54541E2784A"]
+			description: ["Like the Low Pressure Steam Extractor but twice as fast and twice as hungry for Steam"]
 			id: "3617466B7ED9EBBD"
 			tasks: [{
 				id: "33EB925D0938392C"
@@ -731,6 +776,7 @@
 		}
 		{
 			dependencies: ["0CA4EE0E8FD53640"]
+			description: ["One of the pieces you will need to make an LV circuit, Idk why this quest is here i just write the descriptions"]
 			id: "505E26382B610759"
 			tasks: [{
 				id: "7A12715094ED3DF4"
@@ -739,6 +785,42 @@
 			}]
 			x: 5.378634234433605d
 			y: 3.371312134593282d
+		}
+		{
+			dependencies: ["31D19368E7DB975E"]
+			description: ["The Stream Grinder is your first proper processing  multiblock, utilizing steam to do its recipes, It can macerate at the same rate as the low pressure macerator, however it runs 8 recipes at the same time, decreasing wait times for ore processing significantly while still doubling your ores. It also does not produce byproducts similar to its single-block counterpart and if you want those you will need an HV macerator at the minimum."]
+			id: "181DF8754BE4429A"
+			subtitle: "I'll make my own macerator, and it'll have blackjack and hookers!"
+			tasks: [
+				{
+					id: "5BC70A7A8AE942F0"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "2511912F74D26CA9"
+					item: { Count: 22, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "1366FA4576C9EC73"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "70575FCA3723C37F"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "2BAE5666EF53B57A"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: -1.23d
+			y: -2.5d
 		}
 	]
 	title: "ULV"

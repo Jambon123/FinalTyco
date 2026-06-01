@@ -709,6 +709,7 @@
 			y: 3.5d
 		}
 		{
+			description: ["there if you want them, not needed for progression in terms of their cables"]
 			id: "4B91CC45DBC19086"
 			tasks: [{
 				id: "762053235DBB5E00"
