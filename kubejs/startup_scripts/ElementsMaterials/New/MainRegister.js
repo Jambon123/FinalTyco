@@ -2,11 +2,11 @@
 GTCEuStartupEvents.registry('gtceu:element', event => {
     const elem = global.pvHelpers.easyElement(event);
 
-    elem("anulium", "ø", -1, -1, -1, null, false);
-    elem("gurglium", "Þ", -1, -1, -1, null, false);
-    elem("primordium", "¤", -1, -1, -1, null, false);
-    elem("energium", "⚡", -1, -1, -1, null, false);
-    elem("engeriophage", "ð", -1, -1, -1, null, false);
+    elem("anulium", "ø", 1, 1, -1, null, false);
+    elem("gurglium", "Þ", 1, 1, -1, null, false);
+    elem("primordium", "¤", 2, 1, -1, null, false);
+    elem("energium", "⚡", 2, 1, -1, null, false);
+    elem("engeriophage", "ð", 1, 1, -1, null, false);
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -20,10 +20,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
     //Materials with Components
-    event.create("test")
+    var x = event.create("test")
         .ingot()
         .components("1x energium", "1x engeriophage", "1x anulium", "1x gurglium", "1x primordium")
         .color(0x111111)
+
+    console.log(x)
 
 //NOTE: 1-Avena
 

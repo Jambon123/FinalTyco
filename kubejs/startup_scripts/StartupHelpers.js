@@ -1,4 +1,7 @@
 //priority: 10000
+const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
+const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
+const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
 
 global.pvHelpers = global.pvHelpers || {};
 
@@ -185,7 +188,8 @@ global.pvHelpers.ignoreForms = (matname, mapping) => {
                 console.error(`[pv] Unknown TagPrefix: ${tag}`)
                 continue
             }
-            prefix.setIgnored(mat)
+            if (mat) {prefix.setIgnored(mat)}
+            
         }
     })
 
@@ -201,7 +205,15 @@ global.pvHelpers.ignoreForms = (matname, mapping) => {
                 continue
             }
 
-            if (tag === "block") {prefix.setIgnoredBlock(mat, id)} 
-            else {prefix.setIgnored(mat, id)}
+            if (mat) {if (tag === "block") {prefix.setIgnoredBlock(mat, id)} 
+            else {prefix.setIgnored(mat, id)}}
         }
 })}
+
+global.pvHelpers.modifyAddFluid = function(event) {
+    return function addFluid (mat, key, temp) {
+        let prop = new $FluidProperty();
+        prop.getStorage().enqueueRegistration(key, new $FluidBuilder().temperature(temp));
+        mat.setProperty(PropertyKey.FLUID, prop);
+}
+}
