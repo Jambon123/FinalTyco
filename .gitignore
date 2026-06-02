@@ -27,3 +27,6 @@ config/worldedit/worldedit.properties
 config/flywheel-client.toml
 config/worldedit/worldedit.properties
 config/worldedit/worldedit.properties
+config/worldedit/worldedit.properties
+config/flywheel-client.toml
+config/embeddium-fingerprint.json
