@@ -130,7 +130,6 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "I asked to remove this quest and jambon said no"
 			tasks: [{
 				id: "08FC3999A2F31888"
 				item: "gtceu:ulv_machine_hull"
