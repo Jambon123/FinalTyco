@@ -13,6 +13,17 @@
 		x: -4.5d
 		y: 3.75d
 	}]
-	quests: [ ]
+	quests: [{
+		id: "3E70291AA157E86B"
+		shape: "rsquare"
+		size: 1.5d
+		tasks: [{
+			id: "3BC71C882879C525"
+			item: "gtceu:stainless_steel_ingot"
+			type: "item"
+		}]
+		x: 3.0d
+		y: 3.75d
+	}]
 	title: "MV"
 }

@@ -33,8 +33,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 9.75d
-			y: -5.0d
+			x: 8.25d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5F1347E2B7E78051"]
@@ -111,14 +111,11 @@
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: 6.0d
+			y: -4.5d
 		}
 		{
-			dependencies: [
-				"3D58B4EDA1EDE736"
-				"42B50E20FBF18A4E"
-			]
+			dependencies: ["3D58B4EDA1EDE736"]
 			id: "216CE6C42E368F2F"
 			tasks: [{
 				count: 16L
@@ -126,8 +123,8 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.5d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["410503D36C549913"]
@@ -138,8 +135,8 @@
 				item: "gtceu:heatproof_machine_casing"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -5.5d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["136A3CC0BA7C32A1"]
@@ -149,8 +146,8 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -6.0d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["13909D49BDCDA98B"]
@@ -171,8 +168,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.0d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["136A3CC0BA7C32A1"]
@@ -193,7 +190,7 @@
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.5d
 			y: -3.5d
 		}
 		{
@@ -267,25 +264,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2F2F1B2039FF1E30"]
+			dependencies: ["68ACA16786B76A04"]
 			id: "42B50E20FBF18A4E"
 			tasks: [{
 				id: "65F7558877A088E3"
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["02F3503072542F13"]
-			id: "2F2F1B2039FF1E30"
-			tasks: [{
-				id: "453C5145730A4BBA"
-				item: "gtceu:tin_alloy_ingot"
-				type: "item"
-			}]
-			x: 3.0d
+			x: 1.5d
 			y: -3.5d
 		}
 		{
@@ -301,6 +287,7 @@
 		}
 		{
 			dependencies: ["68ACA16786B76A04"]
+			hide_dependent_lines: true
 			id: "1AEBCF0F52A6394C"
 			tasks: [{
 				id: "06F5F06D5D680EE5"
@@ -308,7 +295,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["68ACA16786B76A04"]
@@ -318,8 +305,8 @@
 				item: "gtceu:lv_alloy_smelter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -332,22 +319,30 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["02F3503072542F13"]
+			dependencies: ["68ACA16786B76A04"]
 			id: "3D58B4EDA1EDE736"
-			tasks: [{
-				id: "2D13390E9487FE2A"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2D13390E9487FE2A"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+				{
+					id: "11A762F9D0B43D5B"
+					item: "gtceu:tin_alloy_ingot"
+					type: "item"
+				}
+			]
+			title: "Coil Alloys"
 			x: 3.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["02F3503072542F13"]
+			dependencies: ["68ACA16786B76A04"]
 			id: "410503D36C549913"
 			tasks: [{
 				id: "63FA66959396CA9F"
@@ -355,13 +350,14 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
-				"42B50E20FBF18A4E"
 				"7B028897D3449CE8"
 				"3CD670D8FA68292A"
+				"1AEBCF0F52A6394C"
+				"2C24694833042A61"
 			]
 			id: "4D0DCF7BDF6BA129"
 			tasks: [{
@@ -369,11 +365,12 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.0d
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["32EF60C420125FAC"]
+			icon: "minecraft:spruce_fence_gate"
 			id: "136A3CC0BA7C32A1"
 			tasks: [{
 				id: "0D5F67C5EAE8B6E0"
@@ -385,6 +382,7 @@
 		}
 		{
 			dependencies: ["136A3CC0BA7C32A1"]
+			icon: "fossil:mutant_tree_door"
 			id: "68ACA16786B76A04"
 			tasks: [{
 				id: "2B917AC4AC716174"
@@ -415,7 +413,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["68ACA16786B76A04"]
@@ -449,8 +447,19 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["136A3CC0BA7C32A1"]
+			id: "2C24694833042A61"
+			tasks: [{
+				id: "133BBA2E9DE6D70D"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
 		}
 	]
 	title: "LV"

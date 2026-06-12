@@ -5,7 +5,14 @@
 	group: "01C3A619010E40A6"
 	id: "67CBC864B827A34C"
 	order_index: 4
-	quest_links: [ ]
+	quest_links: [{
+		id: "770E4FD4922405A0"
+		linked_quest: "3E70291AA157E86B"
+		shape: "rsquare"
+		size: 1.5d
+		x: -6.0d
+		y: 0.0d
+	}]
 	quests: [ ]
 	title: "HV"
 }
