@@ -5,7 +5,7 @@
 	group: "01C3A619010E40A6"
 	icon: "gtceu:steel_ingot"
 	id: "7DD44F1D945C2E25"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "0ADE5D36A93FFAF1"
@@ -18,8 +18,8 @@
 		{
 			id: "419BD425DF3D1273"
 			linked_quest: "505E26382B610759"
-			x: -5.0d
-			y: -7.0d
+			x: -7.5d
+			y: -6.0d
 		}
 	]
 	quests: [
@@ -29,7 +29,7 @@
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
-				id: "3B0243CF3094EEAC"
+				id: "4706ED60E76BF4EF"
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
@@ -57,8 +57,8 @@
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: -6.0031772481459456d
-			y: -4.510367636655673d
+			x: -5.9866813785067094d
+			y: -4.491738058642383d
 		}
 		{
 			dependencies: [
@@ -146,18 +146,26 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["13909D49BDCDA98B"]
 			id: "006A21AB159FE478"
 			tasks: [{
-				id: "21793AFDAE979328"
-				item: "gtceu:lv_steam_turbine"
+				id: "0A748148B44EB0FC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_combustion)item(gtceu:lv_steam_turbine)item(gtceu:lv_gas_turbine))"
+					}
+				}
+				title: "Any LV Generator"
 				type: "item"
 			}]
-			x: -8.5d
+			title: "LV Generators"
+			x: -7.5d
 			y: -3.0d
 		}
 		{
@@ -169,7 +177,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["136A3CC0BA7C32A1"]
@@ -179,7 +187,7 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.5d
 			y: -5.5d
 		}
 		{
@@ -271,8 +279,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["13909D49BDCDA98B"]
@@ -294,8 +302,8 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -6.0d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["68ACA16786B76A04"]
@@ -320,7 +328,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["68ACA16786B76A04"]
@@ -366,11 +374,11 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -1.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["32EF60C420125FAC"]
-			icon: "minecraft:spruce_fence_gate"
+			icon: "fossil:mutant_tree_door"
 			id: "136A3CC0BA7C32A1"
 			tasks: [{
 				id: "0D5F67C5EAE8B6E0"
@@ -393,15 +401,15 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["68ACA16786B76A04"]
+			dependencies: ["7C5B2020288E2B64"]
 			id: "7E26EC7A93CDF1B3"
 			tasks: [{
 				id: "4F374345E1D14A83"
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.0d
+			x: 1.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["68ACA16786B76A04"]
@@ -425,7 +433,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2D30936A4FD9E644"]
@@ -436,8 +444,8 @@
 				item: "gtceu:lv_emitter"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -6.0d
+			x: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["75E3C74FAF115488"]
@@ -448,7 +456,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -1.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["136A3CC0BA7C32A1"]
@@ -459,7 +467,199 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["68ACA16786B76A04"]
+			id: "7B47880BCDA0B33E"
+			tasks: [{
+				id: "25DDFC3FAA3036DD"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7B47880BCDA0B33E"]
+			icon: "fossil:mutant_tree_door"
+			id: "7C5B2020288E2B64"
+			tasks: [{
+				id: "2E49C50E319067F0"
+				title: "Ore Processing"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7C5B2020288E2B64"]
+			id: "1FF69BA3DF56DE57"
+			tasks: [{
+				id: "2BD5F0B64322A7E9"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7C5B2020288E2B64"]
+			id: "1BC1996ADAC2F86F"
+			tasks: [{
+				id: "3BAF39309FDFFC13"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7C5B2020288E2B64"]
+			id: "61AA9AD545B9E658"
+			tasks: [{
+				id: "60FF91FFBC5A1F42"
+				item: "gtceu:lv_electromagnetic_separator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7C5B2020288E2B64"]
+			id: "5FFE03251E32D515"
+			tasks: [{
+				id: "25D081B686A66A0E"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7C5B2020288E2B64"]
+			id: "75A71089D764733E"
+			tasks: [{
+				id: "0003E91EBEADDBA6"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["399B1193AF424C64"]
+			id: "6F4DFF40F2C1090E"
+			tasks: [{
+				icon: "gtceu:mv_sodium_battery"
+				id: "556CFE0E674EAAF0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:batteries)"
+					}
+				}
+				title: "Any Battery"
+				type: "item"
+			}]
+			title: "Batteries"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7D30E7B70AF93E66"
+				"6F4DFF40F2C1090E"
+			]
+			id: "0999EAA41EAD6059"
+			tasks: [{
+				id: "195027E9779BC2BE"
+				item: "gtceu:lv_battery_buffer_4x"
+				type: "item"
+			}]
+			title: "Buffers"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2D30936A4FD9E644"]
+			hide_dependency_lines: true
+			id: "399B1193AF424C64"
+			tasks: [{
+				id: "089A5F954BE4B2C1"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7E26EC7A93CDF1B3"]
+			id: "19A1235BCA61FD49"
+			tasks: [{
+				id: "5028416D2737B84D"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["19A1235BCA61FD49"]
+			id: "4D6B024376B02F72"
+			tasks: [{
+				id: "5A998F4317CF1774"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["19A1235BCA61FD49"]
+			id: "6D36ED169B40A4F6"
+			tasks: [{
+				id: "06AFA98B5BEB007C"
+				item: "gtceu:nitrogen_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4D6B024376B02F72"]
+			id: "5656772E38D6F589"
+			tasks: [{
+				id: "07C913D280CF2B93"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["136A3CC0BA7C32A1"]
+			id: "219A7CEFCCF9BF71"
+			tasks: [{
+				id: "4DDA8DAF38310087"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["006A21AB159FE478"]
+			id: "2ADFFED1FCF8E852"
+			tasks: [{
+				id: "525137EE5284D24C"
+				item: "gtceu:lv_transformer_1a"
+				type: "item"
+			}]
+			title: "Transformers"
+			x: -8.5d
+			y: -2.0d
 		}
 	]
 	title: "LV"

@@ -166,6 +166,11 @@
 			hide_until_deps_complete: true
 			icon: "alexscaves:sack_of_sating"
 			id: "1D45E577290BAA33"
+			rewards: [{
+				id: "62C89D4067073E54"
+				item: "alexscaves:raygun"
+				type: "item"
+			}]
 			shape: "heart"
 			size: 2.0d
 			tasks: [{

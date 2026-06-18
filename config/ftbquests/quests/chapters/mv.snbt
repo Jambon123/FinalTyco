@@ -3,27 +3,126 @@
 	default_quest_shape: ""
 	filename: "mv"
 	group: "01C3A619010E40A6"
+	icon: "gtceu:aluminium_ingot"
 	id: "33D50EE5051625D4"
-	order_index: 3
+	order_index: 2
 	quest_links: [{
 		id: "4193B216E57509EC"
 		linked_quest: "25DE607F7FFFCEA9"
 		shape: "rsquare"
 		size: 1.5d
-		x: -4.5d
-		y: 3.75d
+		x: -6.0d
+		y: 3.0d
 	}]
-	quests: [{
-		id: "3E70291AA157E86B"
-		shape: "rsquare"
-		size: 1.5d
-		tasks: [{
-			id: "3BC71C882879C525"
-			item: "gtceu:stainless_steel_ingot"
-			type: "item"
-		}]
-		x: 3.0d
-		y: 3.75d
-	}]
+	quests: [
+		{
+			dependencies: [
+				"700A3826BF5DD977"
+				"1F4542FDBFC252F1"
+			]
+			id: "3E70291AA157E86B"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "3BC71C882879C525"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"25DE607F7FFFCEA9"
+				"3CE99C150FEE92F8"
+			]
+			id: "2CEF35DBEA8663B2"
+			tasks: [{
+				id: "23880172CAFC3AE0"
+				item: "gtceu:gold_single_wire"
+				type: "item"
+			}]
+			title: "Botantia Superconductor 2"
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			id: "3CE99C150FEE92F8"
+			tasks: [{
+				id: "328899F40F76D136"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			id: "57482ADD88B2846D"
+			shape: "circle"
+			tasks: [{
+				id: "703C3B7B96604D7E"
+				title: "botania prog goes here"
+				type: "checkmark"
+			}]
+			title: "botania goes here"
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["608EB99BAEFFC21F"]
+			id: "700A3826BF5DD977"
+			tasks: [{
+				id: "19CF613CD46D1A1B"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			id: "1F4542FDBFC252F1"
+			tasks: [{
+				id: "5DFDF60427AFB4E6"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			title: "Upgrade EBF"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			id: "608EB99BAEFFC21F"
+			tasks: [{
+				id: "62351AEAB9B4C936"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			id: "7BE1A7366992A201"
+			shape: "circle"
+			tasks: [{
+				id: "79260F689740BB64"
+				title: "the moon"
+				type: "checkmark"
+			}]
+			title: "the moon has chromite and ruby"
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			id: "57DBA951B689AD2E"
+			tasks: [{
+				id: "234FB8446709C3D2"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+	]
 	title: "MV"
 }

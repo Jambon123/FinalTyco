@@ -5,7 +5,7 @@
 	group: "01C3A619010E40A6"
 	icon: "gtceu:bronze_ingot"
 	id: "14ED5776ECE9A5D4"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -696,8 +696,8 @@
 				type: "item"
 			}]
 			title: "ULV Superconductor"
-			x: 3.5d
-			y: 4.5d
+			x: 3.757784665416729d
+			y: 4.507085474178936d
 		}
 		{
 			dependencies: ["516A537A03959257"]

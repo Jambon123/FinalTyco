@@ -3,8 +3,9 @@
 	default_quest_shape: ""
 	filename: "hv"
 	group: "01C3A619010E40A6"
+	icon: "gtceu:stainless_steel_ingot"
 	id: "67CBC864B827A34C"
-	order_index: 4
+	order_index: 3
 	quest_links: [{
 		id: "770E4FD4922405A0"
 		linked_quest: "3E70291AA157E86B"
@@ -13,6 +14,17 @@
 		x: -6.0d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [{
+		id: "6EDA6669557933D2"
+		shape: "rsquare"
+		size: 1.5d
+		tasks: [{
+			id: "0EB01B9961C41DDD"
+			item: "gtceu:titanium_ingot"
+			type: "item"
+		}]
+		x: 7.5d
+		y: 0.0d
+	}]
 	title: "HV"
 }

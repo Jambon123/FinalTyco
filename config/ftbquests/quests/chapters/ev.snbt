@@ -3,9 +3,28 @@
 	default_quest_shape: ""
 	filename: "ev"
 	group: "01C3A619010E40A6"
+	icon: "gtceu:titanium_ingot"
 	id: "0FB8199FCD83AA07"
-	order_index: 5
-	quest_links: [ ]
-	quests: [ ]
+	order_index: 4
+	quest_links: [{
+		id: "6566F72028BF8332"
+		linked_quest: "6EDA6669557933D2"
+		shape: "rsquare"
+		size: 1.5d
+		x: -5.25d
+		y: 0.0d
+	}]
+	quests: [{
+		id: "4CD99DBCA499C2E0"
+		shape: "rsquare"
+		size: 1.5d
+		tasks: [{
+			id: "7B462129C1823E15"
+			item: "gtceu:tungsten_steel_ingot"
+			type: "item"
+		}]
+		x: 8.25d
+		y: 0.0d
+	}]
 	title: "EV"
 }
