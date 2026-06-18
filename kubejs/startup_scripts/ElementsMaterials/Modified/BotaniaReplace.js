@@ -1,4 +1,8 @@
 //priority: 1000
+/*
+GTCEuStartupEvents.materialModification(event => {
+    TagPrefix.block.setIgnored(GTMaterialRegistry.getMaterial("manasteel"), AEBlocks.SKY_STONE_BLOCK) 
+})
 
 GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot.setIgnored(GTMaterialRegistry.getMaterial("manasteel"))
@@ -31,7 +35,7 @@ StartupEvents.postInit(event => {
     TagPrefix.nugget.setIgnored(GTMaterialRegistry.getMaterial("terrasteel"), "botania:terrasteel_nugget")
     TagPrefix.block.setIgnoredBlock(GTMaterialRegistry.getMaterial("terrasteel"), "botania:terrasteel_block")
 })
-/*
+
 global.pvHelpers.ignoreForms("elementium", {
     ingot: "botania:elementium_ingot",
     nugget: "botania:elementium_nugget",
