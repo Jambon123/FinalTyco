@@ -64,11 +64,6 @@
     "hud.status": true,
     "hud.contents": true
   },
-  "shetiphiancore": {
-    "hud.rgb16": true,
-    "hud": true,
-    "hud.redstone": true
-  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,
@@ -94,9 +89,6 @@
     "parallel_info": true,
     "data_bank": true
   },
-  "supplementaries": {
-    "hat_stand": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -118,6 +110,9 @@
   "fossil": {
     "feeder_status": true
   },
+  "phoenix_fission": {
+    "fission_machine_info": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
@@ -129,5 +124,13 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "shetiphiancore": {
+    "hud.rgb16": true,
+    "hud": true,
+    "hud.redstone": true
+  },
+  "supplementaries": {
+    "hat_stand": true
   }
 }

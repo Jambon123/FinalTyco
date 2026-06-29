@@ -1,0 +1,268 @@
+fission:
+  # Enable the nuke block.
+  nukeEnabled: true
+
+  # Cube radius in blocks. Total affected volume is (2r+1)^3.
+  nukeCubeRadius: 16
+
+  # Hard cap to prevent insane values.
+  nukeCubeRadiusCap: 48
+
+  # Fuse time in ticks (20 ticks = 1 second). TNT is 80.
+  nukeFuseTicks: 120
+
+  # How many blocks to process per tick during cube wipe.
+  nukeBatchPerTick: 4000
+
+  # Skip blocks that have a BlockEntity (machines/chests).
+  nukeSkipBlockEntities: true
+
+  # Skip blocks in unloaded chunks (prevents chunk-forcing).
+  nukeSkipUnloadedChunks: true
+
+  # If true, replace removed blocks with fire instead of air.
+  nukeReplaceWithFire: false
+
+  # Flat heat added per tick while running (before rods/moderators/parallels).
+  baseHeatPerTick: 0.0
+
+  # Max bonus percent from continuous running (power + breeder output). Example: 60 = up to +60%.
+  burnBonusMaxPercent: 30.0
+
+  # Seconds of continuous running required to reach the max burn bonus. Example: 1200 = 20 minutes.
+  burnBonusRampSeconds: 1200.0
+
+  # The maximum heat a reactor can hold before starting the meltdown timer.
+  maxSafeHeat: 100000.0
+
+  # Minimum heat clamp.
+  minHeat: 0.0
+
+  # Maximum heat clamp to prevent runaway numeric overflow (meltdown still happens).
+  maxHeatClamp: 250000.0
+
+  # Does the reactor naturally lose heat when not running?
+  passiveCooling: true
+
+  # Heat lost per tick when idling.
+  idleHeatLoss: 1.0
+
+  # Base parallels added per fuel rod (before heat-based parallels).
+  parallelsPerFuelRod: 1
+
+  # How much heat is required to add +1 to the recipe parallel multiplier.
+  heatPerParallel: 10000.0
+
+  # Hard cap for parallels.
+  maxParallels: 256
+
+  # How much EU/t is generated per unit of CURRENT heat (power scales with current heat).
+  euPerHeatUnit: 1.0
+
+  # Optional cap on generated EU/t. Set <= 0 for no cap.
+  maxGeneratedEUt: 0
+
+  # If true, fuel usage scales with parallels (recommended).
+  fuelUsageScalesWithParallels: true
+
+  # If true, fuel usage scales with rod count (usually true).
+  fuelUsageScalesWithRodCount: true
+
+  # If true, blanket usage/output is additive across ALL blankets. If false, only the primary blanket is processed.
+  blanketUsageAdditive: true
+
+  # Clamp for total fuel discount percent from moderators.
+  maxFuelDiscountPercent: 90
+
+  # Clamp for total EU boost percent from moderators.
+  maxEUBoostPercent: 100
+
+  # If true, cooling only applies when coolant is present.
+  coolingRequiresCoolant: true
+
+  # If true, coolant usage is additive across all coolers. If false, uses primary cooler only.
+  coolantUsageAdditive: false
+
+  # Minimum EU/t produced while running (prevents 0). Set 0 to allow 0.
+  minGeneratedEUt: 1024
+
+  # Exponent for heat->power curve. 1 = linear, >1 rewards high heat.
+  powerCurveExponent: 2.0
+
+  # Heat fraction of maxSafeHeat where generation begins. 0.0 = always, 0.1 = starts at 10% of maxSafeHeat.
+  powerStartFraction: 0.0
+
+  meltdown:
+    # Base grace seconds when barely above safe heat.
+    baseGraceSeconds: 60.0
+
+    # Minimum grace seconds when extremely above safe heat.
+    minGraceSeconds: 15.0
+
+    # Severity multiplier: higher = faster meltdown when over safe heat.
+    excessHeatSeverity: 1.0
+
+    # If true, falling back under safe heat clears the timer.
+    clearTimerWhenSafe: true
+
+  explosion:
+    # If true, replaces blocks with air/fire. If false, uses standard GT explosion (drops items).
+    destructiveExplosion: false
+
+    # Explosion power scales with fuel rod count: power = base + rods * multiplier.
+    explosionPowerPerFuelRod: 1.5
+
+    # The base power of the meltdown explosion.
+    baseExplosionPower: 2.0
+
+    # Max radius used for destructive bypass block wiping.
+    maxDestructiveRadius: 6
+
+  # If true, all fuel rods in the multiblock must be the same tier.
+  restrictFuelRodTier: true
+
+  # If true, all coolers in the multiblock must be the same tier.
+  restrictCoolerTier: true
+
+  # If >= 0, all fuel rods must be exactly this tier. Set to -1 to disable.
+  requiredFuelRodTier: -1
+
+  # If >= 0, all coolers must be exactly this tier. Set to -1 to disable.
+  requiredCoolerTier: -1
+
+fissionStats:
+  # Configuration for Fission Coolers
+  coolers:
+    # EU/t boost multiplier for the basic cooler.
+    coolingPowerBasicCooler: 2
+
+  # Configuration for Fission Moderators
+  moderators:
+    # EU/t boost multiplier for the graphite moderator.
+    euBoostGraphiteModerator: 2
+
+    # Fuel Discount for the graphite moderator.
+    fuelDiscountGraphiteModerator: 1
+
+    # Tier for the graphite moderator.
+    tierGraphiteModerator: 1
+
+    # EU/t boost multiplier for the beryllium moderator.
+    euBoostBerylliumModerator: 5
+
+    # Fuel Discount for the beryllium moderator.
+    fuelDiscountBerylliumModerator: 2
+
+    # Tier for the beryllium moderator.
+    tierBerylliumModerator: 2
+
+    # EU/t boost multiplier for the heavy water moderator.
+    euBoostHeavyWaterModerator: 12
+
+    # Fuel Discount for the heavy water moderator.
+    fuelDiscountHeavyWaterModerator: 5
+
+    # Tier for the heay water moderator.
+    tierHeavyWaterModerator: 3
+
+    # EU/t boost multiplier for the niobium sic moderator.
+    euBoostNiobiumSicModerator: 30
+
+    # Fuel Discount for the niobium sic moderator.
+    fuelDiscountNiobiumSicModerator: 10
+
+    # Tier for the niobium sic moderator.
+    tierNiobiumSicModerator: 4
+
+  # Configuration for Fission Fuel Rods
+  fuelRods:
+    # Base heat production for the T1 fuel rod.
+    heatProductionT1: 50
+
+    # Base heat production for the T2 fuel rod.
+    heatProductionT2: 150
+
+    # Base heat production for the T3 fuel rod.
+    heatProductionT3: 500
+
+    # Base heat production for the T4 fuel rod.
+    heatProductionT4: 1200
+
+    # Base heat production for the Tt fuel rod.
+    heatProductionT5: 3000
+
+    # NeutronBias for the T1 fuel rod.
+    neutronBiasT1: 0
+
+    # NeutronBias for the T2 fuel rod.
+    neutronBiasT2: 1
+
+    # NeutronBias for the T3 fuel rod.
+    neutronBiasT3: 5
+
+    # NeutronBias for the T4 fuel rod.
+    neutronBiasT4: 12
+
+    # NeutronBias for the T5 fuel rod.
+    neutronBiasT5: 30
+
+    # Fuel cycle duration in ticks for the T1 fuel rod.
+    cycleDurationT1: 2500
+
+    # Fuel cycle duration in ticks for the T2 fuel rod.
+    cycleDurationT2: 3000
+
+    # Fuel cycle duration in ticks for the T3 fuel rod.
+    cycleDurationT3: 3500
+
+    # Fuel cycle duration in ticks for the T4 fuel rod.
+    cycleDurationT4: 4000
+
+    # Fuel cycle duration in ticks for the T5 fuel rod.
+    cycleDurationT5: 8000
+
+    # Fuel amount used per cycle for the T1 fuel rod.
+    cycleAmountT1: 1
+
+    # Fuel amount used per cycle for the T2 fuel rod.
+    cycleAmountT2: 1
+
+    # Fuel amount used per cycle for the T3 fuel rod.
+    cycleAmountT3: 1
+
+    # Fuel amount used per cycle for the T4 fuel rod.
+    cycleAmountT4: 1
+
+    # Fuel amount used per cycle for the T5 fuel rod.
+    cycleAmountT5: 1
+
+    # Fuel used for the T1 fuel rod. (Registry name string)
+    fuelUsedT1: phoenix_fission:basic_fuel_rod
+
+    # Fuel used for the T2 fuel rod. (Registry name string)
+    fuelUsedT2: phoenix_fission:basic_fuel_rod
+
+    # Fuel used for the T3 fuel rod. (Registry name string)
+    fuelUsedT3: phoenix_fission:u235_fuel_pellet
+
+    # Fuel used for the T4 fuel rod. (Registry name string)
+    fuelUsedT4: phoenix_fission:plutonium_241_fuel_pellet
+
+    # Fuel used for the T5 fuel rod. (Registry name string)
+    fuelUsedT5: phoenix_fission:u242_fuel_pellet
+
+    # Depleted Fuel produced for the T1 fuel rod. (Registry name string)
+    depletedGivenT1: phoenix_fission:low_level_radioactive_waste
+
+    # Depleted Fuel produced for the T2 fuel rod. (Registry name string)
+    depletedGivenT2: phoenix_fission:low_level_radioactive_waste
+
+    # Depleted Fuel produced for the T3 fuel rod. (Registry name string)
+    depletedGivenT3: phoenix_fission:spent_uranium_235_nugget
+
+    # Depleted Fuel produced for the T4 fuel rod. (Registry name string)
+    depletedGivenT4: phoenix_fission:depleted_plutonium_241_nugget
+
+    # Depleted Fuel produced for the T5 fuel rod. (Registry name string)
+    depletedGivenT5: phoenix_fission:spent_uranium_242_nugget
+
