@@ -751,7 +751,7 @@
 		}
 		{
 			id: "2BA8B6D9997B4EFC"
-			shape: "pentagon"
+			shape: "heart"
 			size: 4.0d
 			tasks: [{
 				id: "3225BCDD30051134"
@@ -786,6 +786,7 @@
 		}
 		{
 			id: "18634DC62EDA29FB"
+			shape: "heart"
 			tasks: [{
 				id: "172AF2AB385F8633"
 				title: "CHUD FUCKING TIER"

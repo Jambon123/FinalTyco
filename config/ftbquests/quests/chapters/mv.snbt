@@ -11,7 +11,7 @@
 		linked_quest: "25DE607F7FFFCEA9"
 		shape: "rsquare"
 		size: 1.5d
-		x: -6.0d
+		x: -9.5d
 		y: 3.0d
 	}]
 	quests: [
@@ -19,6 +19,7 @@
 			dependencies: [
 				"700A3826BF5DD977"
 				"1F4542FDBFC252F1"
+				"6014719505416819"
 			]
 			id: "3E70291AA157E86B"
 			shape: "rsquare"
@@ -28,8 +29,8 @@
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -43,8 +44,8 @@
 				type: "item"
 			}]
 			title: "Botantia Superconductor 2"
-			x: -6.0d
-			y: 5.0d
+			x: -12.0d
+			y: 3.0d
 		}
 		{
 			id: "3CE99C150FEE92F8"
@@ -53,64 +54,55 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.5d
+			x: -12.0d
+			y: 4.5d
 		}
 		{
 			id: "57482ADD88B2846D"
-			shape: "circle"
+			shape: "heart"
 			tasks: [{
 				id: "703C3B7B96604D7E"
 				title: "botania prog goes here"
 				type: "checkmark"
 			}]
 			title: "botania goes here"
-			x: -6.0d
-			y: 7.5d
+			x: -12.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["608EB99BAEFFC21F"]
+			dependencies: ["1F4542FDBFC252F1"]
 			id: "700A3826BF5DD977"
 			tasks: [{
 				id: "19CF613CD46D1A1B"
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["7343D265FACCC609"]
 			id: "1F4542FDBFC252F1"
+			shape: "hexagon"
 			tasks: [{
 				id: "5DFDF60427AFB4E6"
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
 			title: "Upgrade EBF"
-			x: 6.5d
-			y: 3.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["25DE607F7FFFCEA9"]
 			id: "608EB99BAEFFC21F"
 			tasks: [{
 				id: "62351AEAB9B4C936"
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
-		}
-		{
-			id: "7BE1A7366992A201"
-			shape: "circle"
-			tasks: [{
-				id: "79260F689740BB64"
-				title: "the moon"
-				type: "checkmark"
-			}]
-			title: "the moon has chromite and ruby"
-			x: 6.5d
-			y: 5.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["25DE607F7FFFCEA9"]
@@ -120,8 +112,575 @@
 				item: "gtceu:mv_mixer"
 				type: "item"
 			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			id: "7EAA5A32B4D05EFF"
+			tasks: [{
+				id: "5B3C407BFFEEF3C6"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			id: "0E2BB8C44417DFF6"
+			tasks: [{
+				id: "41DB270143C1FDA0"
+				item: "gtceu:mv_brewery"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0E2BB8C44417DFF6"
+				"2A57E336320D37CA"
+			]
+			dependency_requirement: "one_completed"
+			id: "3A92CC372E22CB59"
+			tasks: [{
+				id: "2FC2678FA28A4AB8"
+				item: "gtceu:biomass_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			id: "2A57E336320D37CA"
+			tasks: [{
+				id: "30BB9B3B25E2E34F"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			id: "01E06EBEA6D212D0"
+			tasks: [
+				{
+					id: "6DF1AA2719B90F9C"
+					item: "gtceu:mv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "3C8454A7EEBB18F9"
+					item: "gtceu:mv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "54342DAD24096F90"
+					item: "gtceu:mv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "20E4244075AAFA3B"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "0FF679C1BB883627"
+					item: "gtceu:mv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "3665906D5268F83E"
+					item: "gtceu:mv_emitter"
+					type: "item"
+				}
+			]
+			title: "MV Components"
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["01E06EBEA6D212D0"]
+			id: "075FD7E9A6644309"
+			tasks: [{
+				id: "34AF072ABD7784EA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:mv_combustion)item(gtceu:mv_steam_turbine)item(gtceu:mv_gas_turbine))"
+					}
+				}
+				title: "Any MV Generator"
+				type: "item"
+			}]
+			title: "MV Generators"
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["57DBA951B689AD2E"]
+			id: "5CBFF7F86219C8ED"
+			tasks: [{
+				id: "7AE58211DDE796F2"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5CBFF7F86219C8ED"]
+			id: "2078635C61DB469D"
+			tasks: [{
+				id: "3CB8ED490CCA3DCD"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A92CC372E22CB59"]
+			hide_details_until_startable: false
+			id: "5599244935C00C97"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "662D2F088D9C0E5D"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: -6.497448979591816d
+			y: 6.16836734693878d
+		}
+		{
+			id: "6845FC00864F2120"
+			shape: "heart"
+			size: 0.5d
+			tasks: [{
+				id: "2DF07878450318C6"
+				title: "optional, pick one to progress"
+				type: "checkmark"
+			}]
+			x: -7.25d
+			y: 4.5d
+		}
+		{
+			id: "5548809E9AEF04C3"
+			shape: "heart"
+			tasks: [{
+				id: "17438AA322D816EF"
+				title: "oil goes here"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"5599244935C00C97"
+				"3A92CC372E22CB59"
+			]
+			id: "04AC90EC205E9046"
+			tasks: [{
+				id: "1E21B7D4BF072D92"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2A57E336320D37CA"]
+			id: "5A3637CFAEAA3868"
+			tasks: [{
+				id: "5D4B6ED7F076BFC5"
+				item: "gtceu:wood_tar_bucket"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"5A3637CFAEAA3868"
+				"5599244935C00C97"
+			]
+			id: "77F52BCA90046FE9"
+			tasks: [{
+				id: "661C60A47CD6DE81"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7EAA5A32B4D05EFF"]
+			id: "5B31DE1A9DD72E20"
+			subtitle: "Bigger Better Buckets"
+			tasks: [{
+				id: "6C2A5B06BAD85561"
+				item: "gtceu:aluminium_fluid_cell"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"04AC90EC205E9046"
+				"41E8502218E8B343"
+			]
+			id: "0F8ED84C315C1BF7"
+			tasks: [{
+				id: "3DF9C6C41540FA95"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
 			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F8ED84C315C1BF7"]
+			id: "03DC6BFE4678F024"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "083B927101398A6C"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2078635C61DB469D"
+				"11F754BDF8F37E00"
+			]
+			id: "7E504D62D95D131B"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "2E9484DA17ED30BE"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57DBA951B689AD2E"]
+			hide_dependency_lines: true
+			id: "11F754BDF8F37E00"
+			tasks: [{
+				id: "7ABD582175D4185B"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["03DC6BFE4678F024"]
+			hide_dependent_lines: true
+			id: "680EE60A22BD506E"
+			tasks: [{
+				id: "62EF2ED90882BD24"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"03FD0CAFB0369D4A"
+				"680EE60A22BD506E"
+			]
+			id: "784E9ED29333BE8F"
+			tasks: [{
+				id: "679E233414ED2B23"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2C24694833042A61"
+				"4D6B024376B02F72"
+			]
+			id: "41E8502218E8B343"
+			tasks: [{
+				id: "30E658D293BD3EEF"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"7E26EC7A93CDF1B3"
+				"7B028897D3449CE8"
+				"2C24694833042A61"
+			]
+			id: "03FD0CAFB0369D4A"
+			tasks: [
+				{
+					id: "4BC102859AE0E511"
+					item: "gtceu:iron_iii_chloride_bucket"
+					type: "item"
+				}
+				{
+					id: "70E0FAC90C871476"
+					item: "gtceu:sodium_persulfate_bucket"
+					type: "item"
+				}
+			]
+			title: "Iron III / Sodium Persulfate"
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			description: ["For &7Stainless Steel&r you will need to either find &8Chromite&r or process &cRuby&r into &8Chromium,&r these are both found on &7Noom&r and will require you to venture into space."]
+			icon: "gtceu:noom_block"
+			id: "6014719505416819"
+			tasks: [{
+				dimension: "genesis:moon"
+				id: "345CF653DC191EA5"
+				title: "Noom is Made of Chromium"
+				type: "dimension"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			id: "3F6064900715E36F"
+			shape: "heart"
+			tasks: [{
+				id: "667BE4E0ABE8735B"
+				title: "space reference"
+				type: "checkmark"
+			}]
+			title: "space goes here"
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E504D62D95D131B"]
+			id: "7343D265FACCC609"
+			tasks: [{
+				id: "1AE9CCA48FB17931"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03DC6BFE4678F024"]
+			id: "62B89890A87A3E7B"
+			tasks: [{
+				id: "6DC57341FE5C0CCA"
+				item: "gtceu:polyvinyl_chloride_plate"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7E504D62D95D131B"]
+			id: "7D6D0E589BA6D7B6"
+			tasks: [{
+				id: "7147BFDF1A4501E9"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: 1.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7E504D62D95D131B"]
+			id: "12042E6313AB7A5B"
+			tasks: [{
+				id: "55459CC033CA14B5"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["700A3826BF5DD977"]
+			id: "3B14E03C5ECB86DD"
+			tasks: [{
+				id: "1FEBBFF420A2625F"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3B14E03C5ECB86DD"
+				"1A2D82C5EA99EA3B"
+				"12042E6313AB7A5B"
+			]
+			id: "400E42F076BCE940"
+			tasks: [{
+				id: "16752B361205B87A"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["62F0BEC655E0F48B"]
+			id: "1A2D82C5EA99EA3B"
+			tasks: [{
+				id: "5B87B77D3EFBBF23"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7D6D0E589BA6D7B6"]
+			id: "62F0BEC655E0F48B"
+			tasks: [{
+				id: "561D51B7A3DB4DF5"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["400E42F076BCE940"]
+			id: "3992819B263B196B"
+			tasks: [{
+				id: "7EF3EE5E60D8B6D2"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["400E42F076BCE940"]
+			id: "3153A2BD2DDB1F2E"
+			tasks: [{
+				id: "1B754B68FA299D8E"
+				item: "gtceu:multi_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3FB184EDCC7B5C64"
+				"3B14E03C5ECB86DD"
+				"3992819B263B196B"
+				"784E9ED29333BE8F"
+			]
+			id: "48A7EA8432459E91"
+			tasks: [{
+				id: "65882DF57818EEB1"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["03DC6BFE4678F024"]
+			hide_dependency_lines: true
+			id: "3FB184EDCC7B5C64"
+			tasks: [{
+				id: "6B3C79F80F1D4F2F"
+				item: "gtceu:capacitor"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"48A7EA8432459E91"
+				"3B14E03C5ECB86DD"
+				"3FB184EDCC7B5C64"
+			]
+			id: "0EEDD6E7F214273A"
+			tasks: [{
+				id: "3149E245E53D218B"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0EEDD6E7F214273A"
+				"23406ACDC217A05F"
+			]
+			id: "558200FC6B417AD1"
+			tasks: [{
+				id: "353CBE5F5C05179F"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"558200FC6B417AD1"
+				"74C18CD7943BC3D6"
+			]
+			id: "0E682A8A759592EB"
+			tasks: [{
+				id: "5FF3118286B9E2A1"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["03DC6BFE4678F024"]
+			hide_dependency_lines: true
+			id: "23406ACDC217A05F"
+			tasks: [{
+				id: "4B23B1541DB59C38"
+				item: "gtceu:inductor"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7B028897D3449CE8"]
+			id: "74C18CD7943BC3D6"
+			tasks: [{
+				id: "590F76ACD552F035"
+				item: "gtceu:blue_alloy_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
 		}
 	]
 	title: "MV"

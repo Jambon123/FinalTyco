@@ -209,8 +209,8 @@
 				type: "item"
 			}]
 			title: "Mana Infused Steel"
-			x: -10.0d
-			y: -2.5d
+			x: -10.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -224,19 +224,19 @@
 				type: "item"
 			}]
 			title: "LV Superconductor"
-			x: -10.0d
-			y: -4.5d
+			x: -10.5d
+			y: -3.0d
 		}
 		{
 			id: "3C75A56B96938EC9"
-			shape: "circle"
+			shape: "heart"
 			tasks: [{
 				id: "23C9CE7DA4FB2254"
 				title: "botania goes here"
 				type: "checkmark"
 			}]
-			x: -10.0d
-			y: -1.5d
+			x: -10.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["13909D49BDCDA98B"]
@@ -380,6 +380,7 @@
 			dependencies: ["32EF60C420125FAC"]
 			icon: "fossil:mutant_tree_door"
 			id: "136A3CC0BA7C32A1"
+			shape: "circle"
 			tasks: [{
 				id: "0D5F67C5EAE8B6E0"
 				title: "Optimised Crafting"
@@ -392,6 +393,7 @@
 			dependencies: ["136A3CC0BA7C32A1"]
 			icon: "fossil:mutant_tree_door"
 			id: "68ACA16786B76A04"
+			shape: "circle"
 			tasks: [{
 				id: "2B917AC4AC716174"
 				title: "Essential Machines"
@@ -484,6 +486,7 @@
 			dependencies: ["7B47880BCDA0B33E"]
 			icon: "fossil:mutant_tree_door"
 			id: "7C5B2020288E2B64"
+			shape: "circle"
 			tasks: [{
 				id: "2E49C50E319067F0"
 				title: "Ore Processing"
@@ -660,6 +663,18 @@
 			title: "Transformers"
 			x: -8.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["2ADFFED1FCF8E852"]
+			id: "4D91FD29290258C8"
+			tasks: [{
+				id: "6D4D5CD54691A1A8"
+				item: "gtceu:lv_1a_energy_converter"
+				type: "item"
+			}]
+			title: "Converters"
+			x: -8.5d
+			y: -0.5d
 		}
 	]
 	title: "LV"

@@ -31,6 +31,12 @@
 			x: 3.0d
 			y: 0.5d
 		}
+		{
+			id: "677719C97F317969"
+			linked_quest: "2A57E336320D37CA"
+			x: 4.5d
+			y: 0.5d
+		}
 	]
 	quests: [{
 		icon: "supplementaries:checker_block"

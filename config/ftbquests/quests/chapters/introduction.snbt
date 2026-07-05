@@ -89,12 +89,25 @@
 			]
 			id: "449D2F50D069BF5F"
 			min_width: 4
-			rewards: [{
-				count: 8
-				id: "634DCBA192CEA48D"
-				item: "farmersdelight:apple_pie_slice"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "634DCBA192CEA48D"
+					item: "farmersdelight:apple_pie_slice"
+					type: "item"
+				}
+				{
+					id: "4840B4AF79D524D2"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.lv"
+						tag: {
+							Charge: 100000L
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "heart"
 			size: 2.0d
 			tasks: [{
@@ -121,7 +134,7 @@
 			dependencies: ["4A302E8F98F1777A"]
 			id: "16A9271BDBA7E903"
 			shape: "octagon"
-			subtitle: "Not Earth?"
+			subtitle: "Home?"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:grass_block"
@@ -129,7 +142,7 @@
 				title: "Home"
 				type: "dimension"
 			}]
-			title: "Terth"
+			title: "Avena"
 			x: -1.0d
 			y: -3.5d
 		}

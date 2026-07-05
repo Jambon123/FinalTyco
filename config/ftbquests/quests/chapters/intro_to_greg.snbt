@@ -726,12 +726,12 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(botania:petals)"
 					}
 				}
-				title: "Any #botania:petals"
+				title: "Any Botania Petals"
 				type: "item"
 			}]
 			title: "Botania Petals"
-			x: 5.334458171217889d
-			y: 6.954064342431302d
+			x: 5.313772801652746d
+			y: 7.0276966067355815d
 		}
 		{
 			dependencies: ["01BCAE9584B6FF4A"]
@@ -758,8 +758,8 @@
 				}
 			]
 			title: "Molds"
-			x: 5.378634234433605d
-			y: 1.96314886928716d
+			x: 5.316022377845748d
+			y: 1.9949879266196504d
 		}
 		{
 			dependencies: ["18BAA54541E2784A"]
@@ -782,8 +782,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 5.378634234433605d
-			y: 3.371312134593282d
+			x: 5.316022377845748d
+			y: 3.4031511919257724d
 		}
 		{
 			dependencies: ["31D19368E7DB975E"]
