@@ -19,8 +19,8 @@
 			id: "217218CFDDD8EAC4"
 			linked_quest: "195E5BFDE4C5A0DE"
 			size: 0.75d
-			x: 6.75d
-			y: 3.375d
+			x: 7.125d
+			y: 3.75d
 		}
 		{
 			id: "0BD725095A2264FF"
@@ -174,7 +174,7 @@
 				type: "item"
 			}]
 			title: "Mass Data Storage"
-			x: 4.5d
+			x: 5.25d
 			y: 0.0d
 		}
 		{
@@ -241,8 +241,8 @@
 				type: "item"
 			}]
 			title: "Naquadah"
-			x: 1.125d
-			y: 1.125d
+			x: 0.99d
+			y: 0.66d
 		}
 		{
 			dependencies: [
@@ -523,8 +523,8 @@
 				type: "item"
 			}]
 			title: "Europium"
-			x: 6.75d
-			y: 2.25d
+			x: 6.6000000000000005d
+			y: 2.2d
 		}
 		{
 			dependencies: ["7A74F692F14F0FF8"]
@@ -591,8 +591,8 @@
 				}
 			]
 			title: "Upgrading your Assembly Line"
-			x: 2.25d
-			y: 2.25d
+			x: 2.31d
+			y: 2.64d
 		}
 		{
 			dependencies: [
@@ -705,7 +705,7 @@
 				}
 			]
 			title: "Ludicrous Batteries"
-			x: 6.75d
+			x: 6.375d
 			y: 4.5d
 		}
 		{
@@ -758,8 +758,8 @@
 				type: "item"
 			}]
 			title: "LuV Prospector"
-			x: 4.5d
-			y: 3.375d
+			x: 3.96d
+			y: 3.3d
 		}
 		{
 			dependencies: [

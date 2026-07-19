@@ -11,20 +11,53 @@
 		linked_quest: "6EDA6669557933D2"
 		shape: "rsquare"
 		size: 1.5d
-		x: -5.25d
+		x: -6.0d
 		y: 0.0d
 	}]
-	quests: [{
-		id: "4CD99DBCA499C2E0"
-		shape: "rsquare"
-		size: 1.5d
-		tasks: [{
-			id: "7B462129C1823E15"
-			item: "gtceu:tungsten_steel_ingot"
-			type: "item"
-		}]
-		x: 8.25d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "4CD99DBCA499C2E0"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "7B462129C1823E15"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: 8.25d
+			y: 0.0d
+		}
+		{
+			id: "5A01150C9FC2A6E5"
+			shape: "heart"
+			tasks: [{
+				id: "4EA96282E07321FC"
+				title: "glugg brine process here"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6EDA6669557933D2"]
+			id: "1F226D2B72AB546C"
+			subtitle: "Pirate seeing his cellar door missing:"
+			tasks: [
+				{
+					id: "601237FAAD2240DA"
+					item: "gtceu:me_input_bus"
+					type: "item"
+				}
+				{
+					id: "00E7333023A66545"
+					item: "gtceu:me_output_bus"
+					type: "item"
+				}
+			]
+			title: "ME Hatches"
+			x: -6.0d
+			y: -2.0d
+		}
+	]
 	title: "EV"
 }

@@ -37,6 +37,36 @@
 			x: 4.5d
 			y: 0.5d
 		}
+		{
+			id: "59ECCEB1680E39DB"
+			linked_quest: "3153A2BD2DDB1F2E"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			id: "04A430B910282296"
+			linked_quest: "221DC686744718DB"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			id: "6DFA5625E6BEB6A2"
+			linked_quest: "2D543577E9761AF1"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			id: "509EB768F3C72883"
+			linked_quest: "2D19A8F7CEE74584"
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			id: "1BC42D8458D13527"
+			linked_quest: "5BB45F138C2E3B4A"
+			x: 7.5d
+			y: 0.5d
+		}
 	]
 	quests: [{
 		icon: "supplementaries:checker_block"
@@ -47,7 +77,7 @@
 			title: "PLACEMENT"
 			type: "checkmark"
 		}]
-		x: 3.5d
+		x: 5.5d
 		y: 2.5d
 	}]
 	title: "Multiblocks"

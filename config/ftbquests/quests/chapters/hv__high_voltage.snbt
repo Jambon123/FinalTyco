@@ -64,8 +64,8 @@
 				type: "item"
 			}]
 			title: "High Voltage Machines"
-			x: 1.125d
-			y: -1.875d
+			x: 0.75d
+			y: -2.25d
 		}
 		{
 			dependencies: ["0021051273D48936"]
@@ -124,8 +124,8 @@
 				type: "item"
 			}]
 			title: "High Voltage Bathing"
-			x: 4.5d
-			y: -1.875d
+			x: 3.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["26394C1290D70AB6"]
@@ -510,7 +510,7 @@
 				type: "item"
 			}]
 			title: "Almost Titanium²"
-			x: 5.625d
+			x: 4.875d
 			y: -4.125d
 		}
 		{
@@ -863,8 +863,8 @@
 				type: "item"
 			}]
 			title: "Fluorine"
-			x: 5.625d
-			y: -0.75d
+			x: 5.28d
+			y: -0.66d
 		}
 		{
 			dependencies: [
@@ -1090,7 +1090,7 @@
 			}]
 			title: "Blaze Powder"
 			x: 6.75d
-			y: -1.875d
+			y: -1.125d
 		}
 		{
 			dependencies: [
@@ -1351,7 +1351,7 @@
 			}]
 			title: "Universal Macerator"
 			x: 0.0d
-			y: -1.875d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1384,8 +1384,8 @@
 				type: "item"
 			}]
 			title: "Ammonia"
-			x: 6.75d
-			y: -0.75d
+			x: 6.2700000000000005d
+			y: -0.33d
 		}
 		{
 			dependencies: ["4024C831C77101CA"]

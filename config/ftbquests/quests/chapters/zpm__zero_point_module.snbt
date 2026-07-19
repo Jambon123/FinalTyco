@@ -128,8 +128,8 @@
 				}
 			]
 			title: "Absolute Elation"
-			x: -6.0d
-			y: 1.125d
+			x: -6.6d
+			y: 0.99d
 		}
 		{
 			dependencies: ["378F0AFCF95354B2"]
@@ -180,7 +180,7 @@
 				type: "item"
 			}]
 			title: "Trinium Coils"
-			x: -4.875d
+			x: -5.25d
 			y: 0.0d
 		}
 		{
@@ -209,7 +209,7 @@
 			}]
 			title: "Research Station"
 			x: -4.875d
-			y: 2.25d
+			y: 2.625d
 		}
 		{
 			dependencies: [
@@ -276,8 +276,8 @@
 				type: "item"
 			}]
 			title: "Advanced Data Access Hatch"
-			x: -2.625d
-			y: 1.125d
+			x: -2.97d
+			y: 0.99d
 		}
 		{
 			dependencies: [
@@ -400,7 +400,7 @@
 			]
 			title: "Upgrading your Assembly Line II"
 			x: -2.625d
-			y: 2.25d
+			y: 1.875d
 		}
 		{
 			dependencies: [
@@ -471,8 +471,8 @@
 				type: "item"
 			}]
 			title: "HPCA"
-			x: -3.75d
-			y: 2.25d
+			x: -3.375d
+			y: 2.625d
 		}
 		{
 			dependencies: ["6AFDA523304711DB"]

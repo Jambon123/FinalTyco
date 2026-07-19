@@ -28,6 +28,54 @@
 			x: -12.0d
 			y: -11.5d
 		}
+		{
+			id: "4F516F03A4864DC2"
+			linked_quest: "25DE607F7FFFCEA9"
+			x: -8.0d
+			y: -11.5d
+		}
+		{
+			id: "6A608A09F31F6FE9"
+			linked_quest: "01BCAE9584B6FF4A"
+			x: -10.0d
+			y: -11.5d
+		}
+		{
+			id: "6CB6F5E2CE86C8F3"
+			linked_quest: "3E70291AA157E86B"
+			x: -6.0d
+			y: -11.5d
+		}
+		{
+			id: "32404C95B327D01E"
+			linked_quest: "6EDA6669557933D2"
+			x: -4.0d
+			y: -11.5d
+		}
+		{
+			id: "3B68FB0FEC57F1C0"
+			linked_quest: "4CD99DBCA499C2E0"
+			x: -2.0d
+			y: -11.5d
+		}
+		{
+			id: "16D3B6A3EA0CB8B9"
+			linked_quest: "505E26382B610759"
+			x: -12.0d
+			y: -8.5d
+		}
+		{
+			id: "0FFD183E7D60BA56"
+			linked_quest: "402260AC00536712"
+			x: 2.0d
+			y: -11.5d
+		}
+		{
+			id: "6422DC839D01FE2C"
+			linked_quest: "71705CE0BF667DA7"
+			x: 0.0d
+			y: -11.5d
+		}
 	]
 	quests: [
 		{
@@ -220,6 +268,10 @@
 			y: 3.5d
 		}
 		{
+			dependencies: [
+				"78CD10B1A8950403"
+				"01BCAE9584B6FF4A"
+			]
 			id: "616C1D34A1CB7499"
 			tasks: [{
 				id: "5D73A8C26BAF553B"
@@ -230,7 +282,10 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["616C1D34A1CB7499"]
+			dependencies: [
+				"616C1D34A1CB7499"
+				"25DE607F7FFFCEA9"
+			]
 			id: "0F111EEFDF6A9582"
 			tasks: [{
 				id: "5434DA9233923CF4"
@@ -241,7 +296,10 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["0F111EEFDF6A9582"]
+			dependencies: [
+				"0F111EEFDF6A9582"
+				"3E70291AA157E86B"
+			]
 			id: "4749BACCE68C9D52"
 			tasks: [{
 				id: "1D2E8827ECB865DE"
@@ -252,7 +310,10 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["4749BACCE68C9D52"]
+			dependencies: [
+				"4749BACCE68C9D52"
+				"6EDA6669557933D2"
+			]
 			id: "25C4EC49ABC9F592"
 			tasks: [{
 				id: "7325B9B32C32C083"
@@ -263,7 +324,10 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["25C4EC49ABC9F592"]
+			dependencies: [
+				"25C4EC49ABC9F592"
+				"4CD99DBCA499C2E0"
+			]
 			id: "701A35D3A47EF316"
 			tasks: [{
 				id: "2079FF0BCE6356EC"
@@ -318,16 +382,6 @@
 			y: -10.0d
 		}
 		{
-			id: "067ED7F54A91B618"
-			tasks: [{
-				id: "035989CC8608C2E4"
-				item: "gtceu:vacuum_tube"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -8.5d
-		}
-		{
 			id: "4287AD64ED9E5F13"
 			tasks: [{
 				id: "06FF60659B0F8FE2"
@@ -338,7 +392,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["067ED7F54A91B618"]
+			dependencies: ["505E26382B610759"]
 			id: "0D82E7D5862B8725"
 			tasks: [{
 				id: "1DFCF03E84776E89"
@@ -781,8 +835,8 @@
 				title: "PLACEMENT"
 				type: "checkmark"
 			}]
-			x: -3.8541723011867433d
-			y: -3.6957440910280965d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			id: "18634DC62EDA29FB"

@@ -3,9 +3,17 @@
 	default_quest_shape: ""
 	filename: "zpm"
 	group: "01C3A619010E40A6"
+	icon: "gtceu:naquadah_alloy_ingot"
 	id: "1D25827B6DAF331D"
 	order_index: 7
-	quest_links: [ ]
+	quest_links: [{
+		id: "50070357B7023DC5"
+		linked_quest: "402260AC00536712"
+		shape: "rsquare"
+		size: 1.5d
+		x: -9.75d
+		y: 0.75d
+	}]
 	quests: [ ]
 	title: "ZPM"
 }

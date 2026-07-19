@@ -14,6 +14,17 @@
 		x: -8.25d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [{
+		id: "71705CE0BF667DA7"
+		shape: "rsquare"
+		size: 1.5d
+		tasks: [{
+			id: "4BA990F1F4D2D357"
+			item: "gtceu:rhodium_plated_palladium_ingot"
+			type: "item"
+		}]
+		x: 3.0d
+		y: 0.0d
+	}]
 	title: "IV"
 }

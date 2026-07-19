@@ -3,9 +3,29 @@
 	default_quest_shape: ""
 	filename: "luv"
 	group: "01C3A619010E40A6"
+	icon: "gtceu:rhodium_plated_palladium_ingot"
 	id: "0639DB15004510CE"
 	order_index: 6
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [{
+		id: "15A818623DC753E2"
+		linked_quest: "71705CE0BF667DA7"
+		shape: "rsquare"
+		size: 1.5d
+		x: -6.0d
+		y: 0.75d
+	}]
+	quests: [{
+		id: "402260AC00536712"
+		shape: "rsquare"
+		size: 1.5d
+		tasks: [{
+			id: "045E448DB70C8C3A"
+			item: "gtceu:naquadah_alloy_ingot"
+			type: "item"
+		}]
+		title: "Naquadah Alloy"
+		x: 5.25d
+		y: 0.75d
+	}]
 	title: "LuV"
 }

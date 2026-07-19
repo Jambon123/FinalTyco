@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "stargates"
 	group: "6A738CD83FF82A8C"
+	icon: "sgjourney:classic_stargate"
 	id: "4C24041AC61D0857"
 	order_index: 5
 	quest_links: [ ]

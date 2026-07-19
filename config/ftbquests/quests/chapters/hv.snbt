@@ -6,25 +6,536 @@
 	icon: "gtceu:stainless_steel_ingot"
 	id: "67CBC864B827A34C"
 	order_index: 3
-	quest_links: [{
-		id: "770E4FD4922405A0"
-		linked_quest: "3E70291AA157E86B"
-		shape: "rsquare"
-		size: 1.5d
-		x: -6.0d
-		y: 0.0d
-	}]
-	quests: [{
-		id: "6EDA6669557933D2"
-		shape: "rsquare"
-		size: 1.5d
-		tasks: [{
-			id: "0EB01B9961C41DDD"
-			item: "gtceu:titanium_ingot"
-			type: "item"
-		}]
-		x: 7.5d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "770E4FD4922405A0"
+			linked_quest: "3E70291AA157E86B"
+			shape: "rsquare"
+			size: 1.5d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "58BB83C6BD64CF2C"
+			linked_quest: "0E682A8A759592EB"
+			x: 0.5d
+			y: 0.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"2D19A8F7CEE74584"
+				"31E266E0FC64ABC1"
+			]
+			id: "6EDA6669557933D2"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "0EB01B9961C41DDD"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "5192885012072853"
+			subtitle: "There's more of them?"
+			tasks: [
+				{
+					id: "26458B01C9AF31EE"
+					item: "gtceu:hv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "05D2D344BC611851"
+					item: "gtceu:hv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "568376B4B6B3BB4A"
+					item: "gtceu:hv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "611CCC132DC9DCED"
+					item: "gtceu:hv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "1A11586F55C58E73"
+					item: "gtceu:hv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "76D5AD108430BBC8"
+					item: "gtceu:hv_emitter"
+					type: "item"
+				}
+				{
+					id: "0F65271C4C8092B1"
+					item: "gtceu:hv_sensor"
+					type: "item"
+				}
+			]
+			title: "HV Components"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "0CE57AEDC33C15E1"
+			subtitle: "Autoclavicular"
+			tasks: [{
+				id: "1479BA3FAF157EAF"
+				item: "gtceu:hv_autoclave"
+				type: "item"
+			}]
+			title: "Advanced Autoclaving"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0CE57AEDC33C15E1"]
+			id: "2B015BF013FAB175"
+			subtitle: "Not Energium, We Checked"
+			tasks: [{
+				id: "1467F46E4236D49E"
+				item: "gtceu:energy_crystal"
+				type: "item"
+			}]
+			title: "Energised Crystal"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B015BF013FAB175"]
+			id: "7547B1713A26432C"
+			tasks: [
+				{
+					id: "0D1992939EE9B82E"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "61E3CC044F7F0818"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "21C7011EB61B3B54"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_leggings"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7A65FD5774BFA8BE"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_boots"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "NanoMuscle Suite"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "21B42BF8432C9227"
+			tasks: [{
+				id: "3E94ED458292C65A"
+				item: "gtceu:hv_chemical_bath"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			icon: "gtceu:cleanroom"
+			id: "221DC686744718DB"
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "59E3FF27316C4640"
+					item: "gtceu:cleanroom"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5239BA7F0029BB85"
+					item: { Count: 8, id: "gtceu:filter_casing" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "04728975EB1FABE4"
+					item: { Count: 32, id: "gtceu:plascrete" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"221DC686744718DB"
+				"21B42BF8432C9227"
+				"6E19F7DA6236BE23"
+			]
+			id: "558D65244FCCF0AF"
+			tasks: [{
+				id: "3DDCDCB171E00451"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			title: "Upgrade the EBF Again"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "6E19F7DA6236BE23"
+			tasks: [{
+				id: "3697D4BAB43CDF87"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "5B61BEBED299F8F8"
+			tasks: [{
+				id: "5021DC50FB80E52F"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "4390F826D66BF5F4"
+			tasks: [{
+				id: "71CD189E349486F3"
+				item: "gtceu:gold_single_wire"
+				type: "item"
+			}]
+			title: "Botania Superconductor #3"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			id: "146BE45323BF3F3D"
+			shape: "heart"
+			tasks: [{
+				id: "30A4A0E52A080B92"
+				title: "botania goes here"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E19F7DA6236BE23"]
+			id: "0FE932BA21F8A7DC"
+			tasks: [{
+				id: "0EA2246CEB4A1083"
+				item: "gtceu:infinite_water_cover"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21B42BF8432C9227"]
+			id: "5178830C43E827F2"
+			tasks: [{
+				id: "494929025CB82F9A"
+				item: "gtceu:hv_chemical_reactor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E19F7DA6236BE23"]
+			id: "10EF6060AC137AA7"
+			tasks: [
+				{
+					id: "72A9C3573946D4B9"
+					item: "gtceu:smd_transistor"
+					type: "item"
+				}
+				{
+					id: "0936C9DBDF002413"
+					item: "gtceu:smd_resistor"
+					type: "item"
+				}
+				{
+					id: "72780246DB44113E"
+					item: "gtceu:smd_capacitor"
+					type: "item"
+				}
+			]
+			title: "SMD Components"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B42BF8432C9227"]
+			id: "037B327D4CBB5887"
+			tasks: [
+				{
+					icon: "gtceu:cyan_glass_lens"
+					id: "17408934DAC9DE2B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:lenses)"
+						}
+					}
+					title: "Any #forge:lenses"
+					type: "item"
+				}
+				{
+					id: "1FA84499FAE33636"
+					item: "gtceu:simple_soc"
+					type: "item"
+				}
+			]
+			title: "Lens and Chips"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10EF6060AC137AA7"]
+			id: "7688D3DDC08BD474"
+			tasks: [
+				{
+					id: "10CA9A3FE4D902FC"
+					item: "gtceu:smd_diode"
+					type: "item"
+				}
+				{
+					id: "00C60DC9A76EA147"
+					item: "gtceu:smd_inductor"
+					type: "item"
+				}
+			]
+			title: "More SMD Components"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["037B327D4CBB5887"]
+			hide_until_deps_complete: false
+			id: "196DEDCD0664C09A"
+			tasks: [{
+				id: "3369B19F63D96C28"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			id: "67BD6CE3DA7BC960"
+			tasks: [{
+				id: "047F36B06F219F8B"
+				item: "gtceu:fluorine_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"67BD6CE3DA7BC960"
+				"5178830C43E827F2"
+			]
+			icon: "gtceu:polytetrafluoroethylene_plate"
+			id: "566A762D4DC3DEDC"
+			subtitle: "I think I spelled it right"
+			tasks: [
+				{
+					id: "1152F7263E62601F"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "6F72C3899EB67021"
+					item: "gtceu:chloroform_bucket"
+					type: "item"
+				}
+				{
+					id: "4E2232C7E2CEEE40"
+					item: "gtceu:polytetrafluoroethylene_plate"
+					type: "item"
+				}
+			]
+			title: "Polytetrafluoroethylene"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["566A762D4DC3DEDC"]
+			icon: "gtceu:large_chemical_reactor"
+			id: "2D543577E9761AF1"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [
+				{
+					id: "42F9D453F92F8854"
+					item: "gtceu:large_chemical_reactor"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6F4461901A696611"
+					item: { Count: 10, id: "gtceu:inert_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "451D3E5D18F76647"
+					item: "gtceu:ptfe_pipe_casing"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E682A8A759592EB"]
+			id: "7E8CB27594DD9953"
+			tasks: [{
+				id: "5B8E8F14E12B3C50"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5752B9E9D2A4CAE2"]
+			id: "31E266E0FC64ABC1"
+			tasks: [{
+				id: "77AA35A297A16392"
+				item: "gtceu:titanium_tetrachloride_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5178830C43E827F2"]
+			id: "5752B9E9D2A4CAE2"
+			tasks: [{
+				id: "5FFBDFF85BA8D261"
+				item: "gtceu:rutile_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0E682A8A759592EB"]
+			icon: "gtceu:vacuum_freezer"
+			id: "2D19A8F7CEE74584"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [
+				{
+					id: "5E6688F3FB7FF1BA"
+					item: "gtceu:vacuum_freezer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "596ACD4911550675"
+					item: "gtceu:frostproof_machine_casing"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E8CB27594DD9953"]
+			id: "44358FA97C11F58F"
+			tasks: [{
+				id: "07C338A99AF87E62"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["558D65244FCCF0AF"]
+			icon: "gtceu:phosphorus_boule"
+			id: "2A01444AD63637BA"
+			tasks: [
+				{
+					id: "3034C914A0CC996A"
+					item: "gtceu:phosphorus_boule"
+					type: "item"
+				}
+				{
+					id: "01721D0CAF1C66FB"
+					item: "gtceu:hv_laser_engraver"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E70291AA157E86B"]
+			id: "5BB45F138C2E3B4A"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "5F0C1EB1754904FF"
+				item: "gtceu:light_noom_block"
+				type: "item"
+			}]
+			title: "Noom Dust Collector"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			id: "41AB039A85131072"
+			shape: "heart"
+			tasks: [{
+				id: "15466EDC110658CC"
+				title: "noom multiblocks"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+	]
 	title: "HV"
 }

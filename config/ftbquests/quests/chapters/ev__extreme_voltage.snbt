@@ -20,7 +20,7 @@
 			id: "01E88C8523658529"
 			linked_quest: "40408FFD02134148"
 			size: 0.75d
-			x: 4.5d
+			x: 3.75d
 			y: 6.75d
 		}
 		{
@@ -301,8 +301,8 @@
 				}
 			]
 			title: "Platinum"
-			x: 4.5d
-			y: 3.75d
+			x: 5.25d
+			y: 4.125d
 		}
 		{
 			dependencies: [
@@ -744,8 +744,8 @@
 				type: "item"
 			}]
 			title: "ME Hatches"
-			x: 5.625d
-			y: 4.5d
+			x: 5.94d
+			y: 4.62d
 		}
 		{
 			dependencies: [
@@ -879,7 +879,7 @@
 			}]
 			title: "Advanced Circuit Boards"
 			x: 5.625d
-			y: 7.875d
+			y: 7.5d
 		}
 		{
 			dependencies: ["383B789B654C4094"]
@@ -996,52 +996,6 @@
 			title: "EV Superconductors"
 			x: 9.0d
 			y: 11.25d
-		}
-		{
-			dependencies: [
-				"4024C831C77101CA"
-				"16B735F9C391D260"
-			]
-			description: [
-				"&aEnder Fluid Link Covers&r are &dGregTech&r's &r&3Ender Tanks&r. Each Cover sends fluids through a frequency defined by an &68-digit hexadecimal number&r (0-9, then A-F for each digit). That gives you &64.29 billion&r channels to work with! Ender fluid Link Covers work as long as their chunk is loaded - regardless of distance or dimension."
-				""
-				"Setting the mode to Import will &o&c&opull&r fluids from the world location it is attached to, while Export will &o&9&opush&r fluids to the world. Each channel has a buffer of &d64 buckets&r."
-				""
-				"You can also make similar &3Ender Item Link Covers&r to transport items, these have the same mechanics as the fluid ones. Craft any of them to complete this quest"
-				""
-				"Lastly, clicking on the &eLock&r in the ui lock the cover to your own &dprivate channel&r, which is helpful if you're playing on a server."
-				"{@pagebreak}"
-				"You can assign a description to each channel in the cover, and list all of them. I recommend you set up a system to organise all those channels. I would also advise against using the default channel (FFFFFFFF) in all cases."
-				""
-				"&l&3Lore:&r&o Before these were added to GTm, we had &dEnder Storage&r&o in the pack. If you are still using them we &lhighly&r&o recommend changing them over to the &aGregTech covers&r&o, which can be done in a crafting table."
-			]
-			id: "23A7E6D95549B1F8"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Ender? I ha- Ok, this joke is old"
-			tasks: [{
-				id: "063E326F5BEA79A5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ender_fluid_link_cover"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ender_item_link_cover"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Ender Fluid Linking"
-			x: 6.75d
-			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1260,8 +1214,8 @@
 				type: "item"
 			}]
 			title: "Epichlorohydrin"
-			x: 2.25d
-			y: 7.875d
+			x: 2.31d
+			y: 7.59d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
@@ -1748,53 +1702,6 @@
 		}
 		{
 			dependencies: [
-				"4AFD3073C731A1E4"
-				"7FA0ACB7F161F378"
-			]
-			description: [
-				"Need to handle &6multiple&r fluid inputs and outputs? Look no further - these &aFluid Hatches&r can handle more than one fluid at once!"
-				""
-				"These cannot be used in a &bDistillation Tower&r, but may be particularly useful in &5Large Chemical Reactors&r."
-			]
-			id: "6BB13E775A579F2E"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "One-To-Many, Many-To-One"
-			tasks: [{
-				id: "3B898812B1C35440"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ev_input_hatch_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_input_hatch_9x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_output_hatch_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_output_hatch_9x"
-							}
-						]
-					}
-				}
-				title: "Multiple Fluid Hatches"
-				type: "item"
-			}]
-			title: "Multiple Fluid Hatches"
-			x: 6.75d
-			y: 5.625d
-		}
-		{
-			dependencies: [
 				"64CACABB48635904"
 				"5BACED5AE350EAB1"
 			]
@@ -1978,8 +1885,8 @@
 				type: "item"
 			}]
 			title: "Reservoir Hatch"
-			x: 3.806122448979586d
-			y: 4.658163265306122d
+			x: 3.3d
+			y: 4.95d
 		}
 		{
 			dependencies: ["39E7997F3080250A"]

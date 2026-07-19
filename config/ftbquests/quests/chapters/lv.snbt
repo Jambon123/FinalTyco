@@ -51,7 +51,7 @@
 			dependencies: ["01BCAE9584B6FF4A"]
 			id: "32EF60C420125FAC"
 			shape: "gear"
-			size: 1.25d
+			size: 1.3d
 			tasks: [{
 				id: "4859F2FE18062442"
 				item: "gtceu:lv_machine_hull"
@@ -84,8 +84,8 @@
 				item: "gtceu:resistor"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -7.5d
+			x: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["01BCAE9584B6FF4A"]
@@ -105,7 +105,7 @@
 			]
 			id: "7D30E7B70AF93E66"
 			shape: "gear"
-			size: 1.25d
+			size: 1.3d
 			tasks: [{
 				id: "15BC0E5E1E2CD707"
 				item: "gtceu:electric_blast_furnace"
@@ -223,7 +223,7 @@
 				item: "gtceu:gold_single_wire"
 				type: "item"
 			}]
-			title: "LV Superconductor"
+			title: "Botania Superconductor #1"
 			x: -10.5d
 			y: -3.0d
 		}
@@ -439,15 +439,14 @@
 		}
 		{
 			dependencies: ["2D30936A4FD9E644"]
-			hide_dependent_lines: true
 			id: "75E3C74FAF115488"
 			tasks: [{
 				id: "02D564EAFDF29357"
 				item: "gtceu:lv_emitter"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -7.0d
+			x: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["75E3C74FAF115488"]
@@ -606,7 +605,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["19A1235BCA61FD49"]
@@ -617,7 +616,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["19A1235BCA61FD49"]
@@ -628,7 +627,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4D6B024376B02F72"]
@@ -639,7 +638,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["136A3CC0BA7C32A1"]

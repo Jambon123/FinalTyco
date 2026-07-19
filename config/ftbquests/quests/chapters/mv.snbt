@@ -19,18 +19,19 @@
 			dependencies: [
 				"700A3826BF5DD977"
 				"1F4542FDBFC252F1"
-				"6014719505416819"
+				"03F3458EDC64A989"
 			]
 			id: "3E70291AA157E86B"
 			shape: "rsquare"
 			size: 1.5d
+			subtitle: "Dishwasher Friendly"
 			tasks: [{
 				id: "3BC71C882879C525"
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 2.0d
+			x: 8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -43,9 +44,9 @@
 				item: "gtceu:gold_single_wire"
 				type: "item"
 			}]
-			title: "Botantia Superconductor 2"
-			x: -12.0d
-			y: 3.0d
+			title: "Botantia Superconductor #2"
+			x: -9.5d
+			y: 5.0d
 		}
 		{
 			id: "3CE99C150FEE92F8"
@@ -54,8 +55,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 4.5d
+			x: -10.5d
+			y: 6.0d
 		}
 		{
 			id: "57482ADD88B2846D"
@@ -66,8 +67,8 @@
 				type: "checkmark"
 			}]
 			title: "botania goes here"
-			x: -12.0d
-			y: 5.5d
+			x: -11.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1F4542FDBFC252F1"]
@@ -84,6 +85,7 @@
 			dependencies: ["7343D265FACCC609"]
 			id: "1F4542FDBFC252F1"
 			shape: "hexagon"
+			subtitle: "Bigger Better Bluer"
 			tasks: [{
 				id: "5DFDF60427AFB4E6"
 				item: "gtceu:mv_energy_input_hatch"
@@ -155,6 +157,8 @@
 		{
 			dependencies: ["25DE607F7FFFCEA9"]
 			id: "2A57E336320D37CA"
+			shape: "rsquare"
+			size: 1.1d
 			tasks: [{
 				id: "30BB9B3B25E2E34F"
 				item: "gtceu:pyrolyse_oven"
@@ -166,6 +170,7 @@
 		{
 			dependencies: ["25DE607F7FFFCEA9"]
 			id: "01E06EBEA6D212D0"
+			subtitle: "New, Beautiful, Blue Components"
 			tasks: [
 				{
 					id: "6DF1AA2719B90F9C"
@@ -218,8 +223,8 @@
 				type: "item"
 			}]
 			title: "MV Generators"
-			x: -9.5d
-			y: -0.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57DBA951B689AD2E"]
@@ -270,17 +275,6 @@
 			y: 4.5d
 		}
 		{
-			id: "5548809E9AEF04C3"
-			shape: "heart"
-			tasks: [{
-				id: "17438AA322D816EF"
-				title: "oil goes here"
-				type: "checkmark"
-			}]
-			x: -5.0d
-			y: 7.0d
-		}
-		{
 			dependencies: [
 				"5599244935C00C97"
 				"3A92CC372E22CB59"
@@ -328,8 +322,8 @@
 				item: "gtceu:aluminium_fluid_cell"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -0.5d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -450,29 +444,23 @@
 			y: 7.5d
 		}
 		{
-			description: ["For &7Stainless Steel&r you will need to either find &8Chromite&r or process &cRuby&r into &8Chromium,&r these are both found on &7Noom&r and will require you to venture into space."]
+			dependencies: ["31630A0DE6701946"]
+			description: [
+				"Welcome to Noom!"
+				""
+				"For &7Stainless Steel&r you will need to either find &9Chromite&r or process &cRuby&r into &9Chromium,&r these are both found on &7Noom&r from ore veins but it is recommended to set up the infrastructure to process &7Noom Dust&r into &9Chromium&r and it's other components."
+			]
 			icon: "gtceu:noom_block"
 			id: "6014719505416819"
 			tasks: [{
 				dimension: "genesis:moon"
 				id: "345CF653DC191EA5"
-				title: "Noom is Made of Chromium"
+				title: "Visit Noom"
 				type: "dimension"
 			}]
-			x: 8.5d
-			y: -0.5d
-		}
-		{
-			id: "3F6064900715E36F"
-			shape: "heart"
-			tasks: [{
-				id: "667BE4E0ABE8735B"
-				title: "space reference"
-				type: "checkmark"
-			}]
-			title: "space goes here"
-			x: 8.5d
-			y: -1.5d
+			title: "The Noom is Made of Chrome"
+			x: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7E504D62D95D131B"]
@@ -580,6 +568,8 @@
 		{
 			dependencies: ["400E42F076BCE940"]
 			id: "3153A2BD2DDB1F2E"
+			shape: "rsquare"
+			size: 1.1d
 			tasks: [{
 				id: "1B754B68FA299D8E"
 				item: "gtceu:multi_smelter"
@@ -649,6 +639,7 @@
 			dependencies: [
 				"558200FC6B417AD1"
 				"74C18CD7943BC3D6"
+				"558D65244FCCF0AF"
 			]
 			id: "0E682A8A759592EB"
 			tasks: [{
@@ -681,6 +672,53 @@
 			}]
 			x: 10.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["25DE607F7FFFCEA9"]
+			hide_dependency_lines: true
+			id: "31630A0DE6701946"
+			tasks: [{
+				id: "0EF6E91E358D96AA"
+				item: "kubejs:hulldeioniser"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6014719505416819"]
+			id: "511CADD301C8973F"
+			tasks: [
+				{
+					id: "7225C862730A20DE"
+					item: "gtceu:light_noom_dust"
+					type: "item"
+				}
+				{
+					id: "3A314CC8946A3349"
+					item: "gtceu:noom_dust"
+					type: "item"
+				}
+				{
+					id: "6A188AD808E7EFF0"
+					item: "gtceu:dark_noom_dust"
+					type: "item"
+				}
+			]
+			title: "Noom Dust"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["511CADD301C8973F"]
+			id: "03F3458EDC64A989"
+			tasks: [{
+				id: "659DF1C08312539B"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
 		}
 	]
 	title: "MV"

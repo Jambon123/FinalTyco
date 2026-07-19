@@ -51,7 +51,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "unfortunately does not produce Coca-Cola or Cocaine"
+			subtitle: "Different kind of coke :("
 			tasks: [{
 				id: "7A5A366DABA5932D"
 				item: "gtceu:coke_oven"
@@ -397,7 +397,7 @@
 			icon: "gtceu:primitive_blast_furnace"
 			id: "5ED279C96D8FB4CC"
 			shape: "gear"
-			size: 1.5d
+			size: 1.3d
 			subtitle: "Primitive? Seems quite advanced to me"
 			tasks: [
 				{
@@ -588,8 +588,8 @@
 			description: ["This is the only multiblock you will make that works without you having to input anything inside! It is a passive source of water you can use to fuel your steam boilers in the early game"]
 			icon: "gtceu:primitive_pump"
 			id: "16D6871189E4AA83"
-			shape: "gear"
-			size: 1.25d
+			shape: "rsquare"
+			size: 1.1d
 			tasks: [
 				{
 					id: "3E241CBC3B851B6A"
@@ -775,8 +775,9 @@
 		}
 		{
 			dependencies: ["0CA4EE0E8FD53640"]
-			description: ["One of the pieces you will need to make an LV circuit, Idk why this quest is here i just write the descriptions"]
+			description: ["Technically your first ULV circuit and a required component later for LV circuits."]
 			id: "505E26382B610759"
+			subtitle: "The Chube"
 			tasks: [{
 				id: "7A12715094ED3DF4"
 				item: "gtceu:vacuum_tube"
