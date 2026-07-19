@@ -33,17 +33,6 @@
         "value": 100
       }
     },
-    "additionalentityattributes:water_visibility": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "tconstruct:generic.bouncy": {
       "enabled": false,
       "min": {
@@ -53,6 +42,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "additionalentityattributes:water_visibility": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "tconstruct:generic.good_effect_duration_multiplier": {
@@ -374,17 +374,6 @@
         "value": 1000000
       }
     },
-    "additionalentityattributes:lava_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "tconstruct:generic.protection_cap": {
       "enabled": false,
       "min": {
@@ -394,6 +383,17 @@
       "max": {
         "default": 0.949999988079071,
         "value": 0.949999988079071
+      }
+    },
+    "additionalentityattributes:lava_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "additionalentityattributes:bonus_rare_loot_rolls": {
