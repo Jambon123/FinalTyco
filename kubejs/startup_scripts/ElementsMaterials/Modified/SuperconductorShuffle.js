@@ -1,3 +1,0 @@
-GTCEuStartupEvents.materialModification(event => {
-    
-})
